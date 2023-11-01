@@ -5,8 +5,8 @@ import './style/Card.css';
 function Main() {
   const history = useHistory();
 
-  const handleClick = () => {
-    history.push('/products');
+  const handleClick = (productId) => {
+    history.push(`/products/${productId}`);
   };
 
   return (
@@ -14,7 +14,7 @@ function Main() {
     <div className="card-container">
       {
         products.map((product) => (
-          <div key={ product.name } className="card">
+          <div key={ product.id } className="card">
             <div className="card-image">
               <img src={ product.primaryImage } alt="" />
             </div>
@@ -25,7 +25,9 @@ function Main() {
               {' '}
               {product.price}
             </span>
-            <button type="button" onClick={ handleClick }>Comprar</button>
+            <button type="button" onClick={ () => handleClick(product.id) }>
+              Comprar
+            </button>
           </div>
         ))
       }

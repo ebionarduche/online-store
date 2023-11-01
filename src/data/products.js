@@ -4,6 +4,7 @@ import imageFonte from './images/procuts/fonte-atx-500w.jpeg';
 
 const products = [
   {
+    id: 1,
     name: 'Galaxy S10',
     description: `Fotografia profissional no seu bolso Descubra
     infinitas possibilidades para suas fotos com as 3 câmeras principais de sua
@@ -38,6 +39,7 @@ const products = [
   },
 
   {
+    id: 2,
     name: 'Fritadeira Air Fryer',
     description: `A Fritadeira Sem Óleo Air Fryer Afn40-bft 4l 1500w Mondial é prática,
     rápida e saudável! Com a tecnologia de circulação de ar quente, ela cozinha, frita,
@@ -70,6 +72,7 @@ const products = [
     ],
   },
   {
+    id: 3,
     name: 'Fonte 500w Fortrek Crusader',
     description: `Fonte de energia padrão ATX, focada em produtos que não
     utilizem consumo elevado. Produto de qualidade e custo benefício. A

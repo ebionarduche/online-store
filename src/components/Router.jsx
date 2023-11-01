@@ -5,7 +5,7 @@ import ProductsDetails from '../pages/ProductsDetails';
 function Router() {
   return (
     <Switch>
-      <Route path="/products" component={ ProductsDetails } />
+      <Route path="/products/:name" component={ ProductsDetails } />
     </Switch>
   );
 }
