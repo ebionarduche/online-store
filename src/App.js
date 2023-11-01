@@ -1,10 +1,12 @@
+import React from 'react';
+import Router from './components/Router';
+
 import './App.css';
-import Card from './components/Card';
 
 function App() {
   return (
     <div className="App">
-      <Card />
+      <Router />
     </div>
   );
 }

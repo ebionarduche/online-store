@@ -1,8 +1,16 @@
+import { useHistory } from 'react-router-dom';
 import products from '../data/products';
 import './style/Card.css';
 
 function Main() {
+  const history = useHistory();
+
+  const handleClick = () => {
+    history.push('/products');
+  };
+
   return (
+
     <div className="card-container">
       {
         products.map((product) => (
@@ -12,13 +20,12 @@ function Main() {
             </div>
             <h1>{product.name}</h1>
             <h2>{product.categories}</h2>
-            <h3>{product.subcategories}</h3>
-            <p>{product.description}</p>
             <span>
               R$
               {' '}
               {product.price}
             </span>
+            <button type="button" onClick={ handleClick }>Comprar</button>
           </div>
         ))
       }
