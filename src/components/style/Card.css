@@ -1,7 +1,7 @@
 .card-container {
   display: flex;
 
-  background-color: green;
+  background-color: white;
   margin: 100px;
 }
 
@@ -16,12 +16,12 @@
 }
 
 .card > h1 {
-  color: white;
+  color: black;
   font-size: 1.5rem;
 }
 
 .card > h2 {
-  color: white;
+  color: black;
   font-size: 1.2rem;
 }
 
