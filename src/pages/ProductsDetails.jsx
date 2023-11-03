@@ -11,7 +11,9 @@ function ProductsDetails() {
     <div>
       <Header />
       <h1>ProductsDetails</h1>
-      <Card />
+      <div className="card-details">
+        <Card />
+      </div>
     </div>
   );
 }

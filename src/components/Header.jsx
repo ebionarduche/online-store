@@ -1,11 +1,11 @@
 import React from 'react';
+import '../App.css';
 
 function Header() {
   return (
     <div className="header-container">
-      <div>
-        <h1>Online Store🛒</h1>
-      </div>
+      <h1>Online Store🛒</h1>
+      <input type="text" placeholder="Search..." />
     </div>
   );
 }
