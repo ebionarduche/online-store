@@ -1,3 +1,4 @@
+/* eslint-disable sonarjs/no-duplicate-string */
 /* eslint-disable max-lines */
 import imageGalaxy from './images/procuts/s10.jpeg';
 import imageFritadeira from './images/procuts/fritadeira.jpg';
@@ -7,6 +8,13 @@ import imageBoombox from './images/procuts/Boombox3.jpeg';
 import imageNikeCourt from './images/procuts/TenisNikeCourt.jpg';
 import imageFuradeira from './images/procuts/FuradeiraWap.jpeg';
 import imageBicicleta from './images/procuts/BicicletaKrw.jpg';
+import imageTvLg from './images/procuts/TelevisãoLG.jpeg';
+import imageLiquidificador from './images/procuts/LiquidificadorMultifuncional.jpg';
+import imageCamera from './images/procuts/CameraCanon.jpg';
+import imageSmartwatch from './images/procuts/RelogioXiaomi.jpeg';
+import imagePanelaEletrica from './images/procuts/PanelaEletrica.jpg';
+import imageNotebook from './images/procuts/NotebookAcer.jpg';
+import imageMochila from './images/procuts/MochilaCamping.jpg';
 
 const products = [
   {
@@ -201,6 +209,7 @@ const products = [
     feito com lona durável, costuras de herança e um grande Swoosh na lateral
     que atualiza a edição. A boca acolchoada proporciona uma ótima sensação e
     adiciona uma camada extra de conforto.`,
+    categories: 'Vestuário',
     subcategories: 'Calçados',
     characteristics: {
       stock: 50,
@@ -238,6 +247,7 @@ const products = [
     parafusadeira e furadeira 12V BPF 12K3 é a solução ideal.
     Com design exclusivo WAP, é uma ferramenta compacta,
     porém robusta, ideal para pequenas reformas e manutenção do lar.`,
+    categories: 'Ferramentas',
     subcategories: 'Furadeiras',
     characteristics: {
       stock: 50,
@@ -275,6 +285,7 @@ const products = [
     realizar um passeio e pegar trilhas leves. Com seu quadro em alumínio
     6061, fornece segurança e leveza no seu pedal. Possuí diversas cores
     que garante um estilo próprio para você.`,
+    categories: 'Esporte',
     subcategories: 'Ciclismo',
     characteristics: {
       stock: 100,
@@ -313,6 +324,259 @@ const products = [
         e terrenos acidentados.`,
         stars: 5,
         image: 'imagem',
+      },
+    ],
+  },
+  {
+    id: 9,
+    name: 'Smart TV LED 55 Polegadas',
+    description: `Assista aos seus filmes e programas favoritos em uma
+    tela grande de 55 polegadas. A Smart TV oferece uma experiência de
+    entretenimento incrível.`,
+    categories: 'Eletronico',
+    subcategories: 'Televisões',
+    characteristics: {
+      stock: 20,
+      brand: 'LG',
+      sales_format: 'Unidade',
+      cor: ['Preto'],
+    },
+    price: 1499.00,
+    quantity: 1,
+    primaryImage: imageTvLg,
+    secondaryImage: imageTvLg,
+    ratting: [
+      {
+        title: 'Excelente Qualidade de Imagem',
+        assessment: `A qualidade da imagem é surpreendente. As cores são
+        vibrantes e nítidas.`,
+        stars: 5,
+        image: 'imagem',
+        data: '2023-08-12',
+      },
+      {
+        title: 'Ótimo Custo-Benefício',
+        assessment: 'Esta Smart TV oferece um ótimo custo-benefício. Recomendo!',
+        stars: 4,
+        image: 'imagem',
+        data: '2023-06-25',
+      },
+    ],
+  },
+  {
+    id: 10,
+    name: 'Liquidificador Multifuncional',
+    description: `Prepare deliciosos sucos, smoothies e sopas com este
+    liquidificador multifuncional.`,
+    categories: 'Eletrodomésticos',
+    subcategories: 'Liquidificadores',
+    characteristics: {
+      stock: 30,
+      brand: 'Mondial',
+      sales_format: 'Unidade',
+      cor: ['Branco'],
+    },
+    price: 89.90,
+    quantity: 1,
+    primaryImage: imageLiquidificador,
+    secondaryImage: imageLiquidificador,
+    ratting: [
+      {
+        title: 'Eficiente e Prático',
+        assessment: `Este liquidificador é eficiente e fácil de usar.
+        Perfeito para o dia a dia.`,
+        stars: 5,
+        image: 'imagem',
+        data: '2023-09-05',
+      },
+      {
+        title: 'Ótimo Custo-Benefício',
+        assessment: 'Excelente custo-benefício. Recomendo a todos!',
+        stars: 4,
+        image: 'imagem',
+        data: '2023-07-10',
+      },
+    ],
+  },
+  {
+    id: 11,
+    name: 'Câmera Digital 20MP',
+    description: `Capture momentos especiais com esta câmera digital de
+    20 megapixels. Fotos de alta qualidade garantidas.`,
+    categories: 'Eletronico',
+    subcategories: 'Câmeras',
+    characteristics: {
+      stock: 15,
+      brand: 'Canon',
+      sales_format: 'Unidade',
+      cor: ['Prata'],
+    },
+    price: 249.99,
+    quantity: 1,
+    primaryImage: imageCamera,
+    secondaryImage: imageCamera,
+    ratting: [
+      {
+        title: 'Excelente Qualidade de Imagem',
+        assessment: `As fotos tiradas com esta câmera têm uma qualidade
+        excepcional. Muito satisfeito!`,
+        stars: 5,
+        image: 'imagem',
+        data: '2023-10-15',
+      },
+      {
+        title: 'Fácil de Usar',
+        assessment: 'A câmera é fácil de usar e oferece ótimos resultados. Recomendo.',
+        stars: 4,
+        image: 'imagem',
+        data: '2023-09-02',
+      },
+    ],
+  },
+  {
+    id: 12,
+    name: 'Relógio Inteligente Smartwatch',
+    description: `Mantenha-se conectado e monitore sua saúde com este
+    smartwatch. Receba notificações, rastreie seus passos e monitore seu
+    batimento cardíaco.`,
+    categories: 'Eletrônicos',
+    subcategories: 'Smartwatches',
+    characteristics: {
+      stock: 25,
+      brand: 'Xiaomi',
+      sales_format: 'Unidade',
+      cor: ['Preto', 'Branco', 'Prata'],
+    },
+    price: 149.99,
+    quantity: 1,
+    primaryImage: imageSmartwatch,
+    secondaryImage: imageSmartwatch,
+    ratting: [
+      {
+        title: 'Conectividade Excelente',
+        assessment: `Este smartwatch mantém você conectado o tempo todo.
+        Ótimo para notificações e monitoramento de saúde.`,
+        stars: 5,
+        image: 'imagem',
+        data: '2023-11-15',
+      },
+      {
+        title: 'Estiloso e Funcional',
+        assessment: `Além de ser funcional, este smartwatch tem um design
+        moderno. Estou muito satisfeito com a minha compra.`,
+        stars: 4,
+        image: 'imagem',
+        data: '2023-10-01',
+      },
+    ],
+  },
+  {
+    id: 13,
+    name: 'Panela Elétrica de Arroz',
+    description: `Prepare arroz perfeito com esta panela elétrica. Fácil de
+    usar e com resultados deliciosos.`,
+    categories: 'Eletrodomésticos',
+    subcategories: 'Panelas Elétricas',
+    characteristics: {
+      stock: 30,
+      brand: 'Britânia',
+      sales_format: 'Unidade',
+      cor: ['Branco'],
+    },
+    price: 59.90,
+    quantity: 1,
+    primaryImage: imagePanelaEletrica,
+    secondaryImage: imagePanelaEletrica,
+    ratting: [
+      {
+        title: 'Arroz Perfeito',
+        assessment: `Esta panela elétrica faz um arroz delicioso. Fácil de
+        usar e limpar.`,
+        stars: 5,
+        image: 'imagem',
+        data: '2023-12-05',
+      },
+      {
+        title: 'Prática e Eficiente',
+        assessment: `Uma panela elétrica prática que facilita o preparo do
+        arroz. Estou satisfeito com o desempenho.`,
+        stars: 4,
+        image: 'imagem',
+        data: '2023-11-20',
+      },
+    ],
+  },
+  {
+    id: 14,
+    name: 'Notebook Ultrafino 15 Polegadas',
+    description: `Trabalhe e divirta-se com este notebook ultrafino de 15
+    polegadas. Leve e portátil, perfeito para uso diário.`,
+    categories: 'Eletrônicos',
+    subcategories: 'Notebooks',
+    characteristics: {
+      stock: 10,
+      brand: 'Acer',
+      sales_format: 'Unidade',
+      cor: ['Prata'],
+    },
+    price: 799.99,
+    quantity: 1,
+    primaryImage: imageNotebook,
+    secondaryImage: imageNotebook,
+    ratting: [
+      {
+        title: 'Ótimo Desempenho',
+        assessment: `Este notebook oferece um ótimo desempenho para trabalho
+        e entretenimento. Estou impressionado com a velocidade.`,
+        stars: 5,
+        image: 'imagem',
+        data: '2023-12-15',
+      },
+      {
+        title: 'Portabilidade e Elegância',
+        assessment: `Além do desempenho, este notebook é portátil e tem um
+        design elegante. Ótimo para viagens e uso diário.`,
+        stars: 4,
+        image: 'imagem',
+        data: '2023-11-30',
+      },
+    ],
+  },
+  {
+    id: 15,
+    name: 'Mochila para Camping 50 Litros',
+    description: `Prepare-se para sua próxima aventura ao ar livre com esta
+    mochila de camping de 50 litros.
+    Espaçosa e confortável, é ideal para carregar seus equipamentos e
+    suprimentos durante trilhas e acampamentos.`,
+    categories: 'Esportes',
+    subcategories: 'Mochilas',
+    characteristics: {
+      stock: 20,
+      brand: 'Outdoor Adventure',
+      sales_format: 'Unidade',
+      cor: ['Verde', 'Azul', 'Laranja'],
+    },
+    price: 79.99,
+    quantity: 1,
+    primaryImage: imageMochila,
+    secondaryImage: imageMochila,
+    ratting: [
+      {
+        title: 'Espaçosa e Confortável',
+        assessment: `Esta mochila é incrivelmente espaçosa e confortável de
+        usar durante longas caminhadas e aventuras ao ar livre. Altamente recomendada!`,
+        stars: 5,
+        image: 'imagem',
+        data: '2023-12-20',
+      },
+      {
+        title: 'Durável e Funcional',
+        assessment: `A mochila é durável e possui diversos compartimentos
+        funcionais para organizar seus pertences. Ótimo para aventureiros!`,
+        stars: 4,
+        image: 'imagem',
+        data: '2023-11-25',
       },
     ],
   },
