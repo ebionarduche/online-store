@@ -1,3 +1,4 @@
+/* eslint-disable max-lines */
 import imageGalaxy from './images/procuts/s10.jpeg';
 import imageFritadeira from './images/procuts/fritadeira.jpg';
 import imageFonte from './images/procuts/fonte-atx-500w.jpeg';
@@ -5,8 +6,6 @@ import imageTeclado from './images/procuts/tecladoLogitech.jpg';
 import imageBoombox from './images/procuts/Boombox3.jpeg';
 import imageNikeCourt from './images/procuts/TenisNikeCourt.jpg';
 import imageFuradeira from './images/procuts/FuradeiraWap.jpeg';
-
-// Retirei as avaliações, o arquivo não deixava ter mais linhas;
 
 const products = [
   {
@@ -28,6 +27,20 @@ const products = [
     quantity: 1,
     primaryImage: imageGalaxy,
     secondaryImage: imageGalaxy,
+    ratting: [
+      {
+        title: 'Uma bosta',
+        assessment: 'Nun gsotei desse celular trava muito',
+        stars: 5,
+        image: 'imagem',
+      },
+      {
+        title: 'Chegou rapido',
+        assessment: 'Uma bela Beleza',
+        stars: 4,
+        image: 'imagem',
+      },
+    ],
   },
   {
     id: 2,
@@ -47,6 +60,20 @@ const products = [
     quantity: 1,
     primaryImage: imageFritadeira,
     secondaryImage: imageFritadeira,
+    ratting: [
+      {
+        title: 'Top demais',
+        assessment: 'Fritei tudo',
+        stars: 5,
+        image: 'imagem',
+      },
+      {
+        title: 'Chegou rapido',
+        assessment: 'A batata frita fica otima',
+        stars: 4,
+        image: 'imagem',
+      },
+    ],
   },
   {
     id: 3,
@@ -67,6 +94,20 @@ const products = [
     quantity: 1,
     primaryImage: imageFonte,
     secondaryImage: imageFonte,
+    ratting: [
+      {
+        title: 'Custo beneficio',
+        assessment: 'Muito bom, recomendo',
+        stars: 5,
+        image: 'imagem',
+      },
+      {
+        title: 'Silenciosa',
+        assessment: 'Muito boa, silenciosa e não esquenta',
+        stars: 4,
+        image: 'imagem',
+      },
+    ],
   },
   {
     id: 4,
@@ -88,6 +129,22 @@ const products = [
     quantity: 1,
     primaryImage: imageTeclado,
     secondaryImage: imageTeclado,
+    ratting: [
+      {
+        title: 'Excelente Teclado',
+        assessment: `O teclado é incrível! As teclas são macias e
+        responsivas. Perfeito para digitar e jogar.`,
+        stars: 5,
+        image: 'imagem',
+      },
+      {
+        title: 'Design Elegante',
+        assessment: `Além de ser funcional, o design deste teclado é
+        muito elegante. Combina perfeitamente com meu setup.`,
+        stars: 4,
+        image: 'imagem',
+      },
+    ],
   },
   {
     id: 5,
@@ -108,6 +165,22 @@ const products = [
     quantity: 1,
     primaryImage: imageBoombox,
     secondaryImage: imageBoombox,
+    ratting: [
+      {
+        title: 'Qualidade de Som Surpreendente',
+        assessment: `Essa caixa de som é impressionante! A qualidade do
+        som é cristalina e os graves são poderosos.`,
+        stars: 5,
+        image: 'imagem',
+      },
+      {
+        title: 'Portátil e Conveniente',
+        assessment: `Além do ótimo som, esta caixa de som é pequena e
+        fácil de transportar. Perfeita para viagens.`,
+        stars: 4,
+        image: 'imagem',
+      },
+    ],
   },
   {
     id: 6,
@@ -124,10 +197,26 @@ const products = [
       sales_format: 'Unidade',
       cor: ['Preto', 'Branco'],
     },
-    price: 2.179,
+    price: 439.99,
     quantity: 1,
     primaryImage: imageNikeCourt,
     secondaryImage: imageNikeCourt,
+    ratting: [
+      {
+        title: 'Conforto Inigualável',
+        assessment: `Estes tênis são extremamente confortáveis! Sinto
+        como se estivesse caminhando nas nuvens.`,
+        stars: 5,
+        image: 'imagem',
+      },
+      {
+        title: 'Duráveis e Estilosos',
+        assessment: `Além do conforto, esses tênis são muito duráveis e
+        têm um visual moderno que combina com tudo.`,
+        stars: 4,
+        image: 'imagem',
+      },
+    ],
   },
   {
     id: 7,
@@ -147,6 +236,22 @@ const products = [
     quantity: 1,
     primaryImage: imageFuradeira,
     secondaryImage: imageFuradeira,
+    ratting: [
+      {
+        title: 'Potente e Eficiente',
+        assessment: `Esta furadeira é incrivelmente potente e eficiente.
+        Fura facilmente através de materiais duros.`,
+        stars: 5,
+        image: 'imagem',
+      },
+      {
+        title: 'Fácil de Manusear',
+        assessment: `Apesar da potência, é fácil de manusear. As
+        configurações são simples de ajustar e o controle é preciso.`,
+        stars: 4,
+        image: 'imagem',
+      },
+    ],
   },
 ];
 
