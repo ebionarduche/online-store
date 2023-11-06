@@ -6,6 +6,7 @@ import imageTeclado from './images/procuts/tecladoLogitech.jpg';
 import imageBoombox from './images/procuts/Boombox3.jpeg';
 import imageNikeCourt from './images/procuts/TenisNikeCourt.jpg';
 import imageFuradeira from './images/procuts/FuradeiraWap.jpeg';
+import imageBicicleta from './images/procuts/BicicletaKrw.jpg';
 
 const products = [
   {
@@ -33,12 +34,14 @@ const products = [
         assessment: 'Nun gsotei desse celular trava muito',
         stars: 5,
         image: 'imagem',
+        data: '2023-05-20',
       },
       {
         title: 'Chegou rapido',
         assessment: 'Uma bela Beleza',
         stars: 4,
         image: 'imagem',
+        data: '2023-07-02',
       },
     ],
   },
@@ -66,12 +69,14 @@ const products = [
         assessment: 'Fritei tudo',
         stars: 5,
         image: 'imagem',
+        data: '2021-05-20',
       },
       {
         title: 'Chegou rapido',
         assessment: 'A batata frita fica otima',
         stars: 4,
         image: 'imagem',
+        data: '2020-10-20',
       },
     ],
   },
@@ -100,12 +105,14 @@ const products = [
         assessment: 'Muito bom, recomendo',
         stars: 5,
         image: 'imagem',
+        data: '2023-05-15',
       },
       {
         title: 'Silenciosa',
         assessment: 'Muito boa, silenciosa e não esquenta',
         stars: 4,
         image: 'imagem',
+        data: '2021-12-20',
       },
     ],
   },
@@ -125,7 +132,7 @@ const products = [
       sales_format: 'Unidade',
       cor: [null],
     },
-    price: 656,
+    price: 656.60,
     quantity: 1,
     primaryImage: imageTeclado,
     secondaryImage: imageTeclado,
@@ -136,6 +143,7 @@ const products = [
         responsivas. Perfeito para digitar e jogar.`,
         stars: 5,
         image: 'imagem',
+        data: '2021-05-20',
       },
       {
         title: 'Design Elegante',
@@ -143,6 +151,7 @@ const products = [
         muito elegante. Combina perfeitamente com meu setup.`,
         stars: 4,
         image: 'imagem',
+        data: '2022-07-19',
       },
     ],
   },
@@ -161,7 +170,7 @@ const products = [
       sales_format: 'Unidade',
       cor: ['Preto', 'Verde-musgo'],
     },
-    price: 2.179,
+    price: 2179.50,
     quantity: 1,
     primaryImage: imageBoombox,
     secondaryImage: imageBoombox,
@@ -172,6 +181,7 @@ const products = [
         som é cristalina e os graves são poderosos.`,
         stars: 5,
         image: 'imagem',
+        data: '2021-09-24',
       },
       {
         title: 'Portátil e Conveniente',
@@ -179,6 +189,7 @@ const products = [
         fácil de transportar. Perfeita para viagens.`,
         stars: 4,
         image: 'imagem',
+        data: '2023-04-21',
       },
     ],
   },
@@ -208,6 +219,7 @@ const products = [
         como se estivesse caminhando nas nuvens.`,
         stars: 5,
         image: 'imagem',
+        data: '2022-09-15',
       },
       {
         title: 'Duráveis e Estilosos',
@@ -215,6 +227,7 @@ const products = [
         têm um visual moderno que combina com tudo.`,
         stars: 4,
         image: 'imagem',
+        data: '2022-12-20',
       },
     ],
   },
@@ -232,7 +245,7 @@ const products = [
       sales_format: 'Unidade',
       cor: [null],
     },
-    price: 169,
+    price: 169.90,
     quantity: 1,
     primaryImage: imageFuradeira,
     secondaryImage: imageFuradeira,
@@ -243,12 +256,62 @@ const products = [
         Fura facilmente através de materiais duros.`,
         stars: 5,
         image: 'imagem',
+        data: '2019-05-20',
       },
       {
         title: 'Fácil de Manusear',
         assessment: `Apesar da potência, é fácil de manusear. As
         configurações são simples de ajustar e o controle é preciso.`,
         stars: 4,
+        image: 'imagem',
+        data: '2023-03-03',
+      },
+    ],
+  },
+  {
+    id: 8,
+    name: 'Bicicleta Aro 29 Krw Alumínio 24 Vel Freio A Disco X42',
+    description: `A bicicleta KRW X42 foi desenvolvida para quem quer
+    realizar um passeio e pegar trilhas leves. Com seu quadro em alumínio
+    6061, fornece segurança e leveza no seu pedal. Possuí diversas cores
+    que garante um estilo próprio para você.`,
+    subcategories: 'Ciclismo',
+    characteristics: {
+      stock: 100,
+      brand: 'KRW',
+      sales_format: 'Unidade',
+      cor: ['Azul/Preto', 'Branco/Preto',
+        'Grafite/Preto Fosco', 'Laranja/Preto', 'Preto/Amarelo e Vermelho'],
+    },
+    price: 873.50,
+    quantity: 1,
+    primaryImage: imageBicicleta,
+    secondaryImage: imageBicicleta,
+    ratting: [
+      {
+        title: 'Excelente Bicicleta para Aventuras',
+        assessment: `A Bicicleta Aro 29 Krw Alumínio 24 Vel Freio A Disco
+        X42 é incrível! Ela é
+        perfeita para quem gosta de aventuras e trilhas. Com 24
+        velocidades e freio a disco, você
+        pode enfrentar qualquer terreno com facilidade.`,
+        stars: 5,
+        image: 'imagem',
+      },
+      {
+        title: 'Construção Durável',
+        assessment: `Esta bicicleta é feita de alumínio de alta
+        qualidade, o que a torna leve e resistente. Você pode confiar na
+        durabilidade deste produto.`,
+        stars: 4,
+        image: 'imagem',
+      },
+      {
+        title: 'Desempenho de Freio Incrível',
+        assessment: `O freio a disco X42 proporciona um desempenho de
+        frenagem incrível, garantindo sua segurança em descidas íngremes
+        e terrenos acidentados.`,
+        stars: 5,
         image: 'imagem',
       },
     ],
