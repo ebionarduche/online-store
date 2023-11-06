@@ -1,24 +1,29 @@
 .card-container {
   display: flex;
-  padding: 10px;
-  background-color: white;
-  margin: 100px;
+  flex-wrap: wrap ;
+  padding: 2.5%;
+  justify-content: center;
+  width: 100%
 }
 
 .card {
   display: flex;
-  width: 40%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 3px solid rgba(135, 196, 180, 0.256);
-  border-radius: 3px;
+  padding: 10px;
+  width: 20%;
+  border-radius: 5%;
   margin: 5%;
+  background-color: #fff;
+  border: 3px solid rgba(135, 196, 180, 0.256);
 }
+
 
 .card > h1 {
   color: black;
   font-size: 1.5rem;
+
 }
 
 .card > h2 {
@@ -35,12 +40,27 @@
 }
 
 .card-image > img {
-  width: 100%;
+  width: 120px;
 }
 
 .card > span {
   margin-top: 2.5%;
   font-size: 2rem;
-  background-color: white;
   border-radius: 10%;
+}
+
+.card > button {
+  background-color: #007bff;  
+  color: #fff; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px;  
+  cursor: pointer; 
+  transition: background-color 0.3s;
+  font-size: 16px; /* Tamanho da fonte aumentado */
+}
+
+
+.card > button:hover {
+  background-color: #0056b3; /* Cor de fundo alterada no hover */
 }

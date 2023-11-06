@@ -1,45 +1,34 @@
-// import React from 'react';
-// import PropTypes from 'prop-types';
+import React from 'react';
+import PropTypes from 'prop-types';
 
-// function ProductReviews({ rating }) {
-//   return (
-//     <div>
-//       <h3>
-//         `Avaliações do $
-//         {product.name}
-//         :`
-//       </h3>
-//       {/*
-//       {
-//         rating.map((review) => (
-//           <div key={ review.title }>
-//             <h4>{review.title}</h4>
-//             <p>{review.assessment}</p>
-//             <p>
-//               Classificação:
-//               {review.stars}
-//               {' '}
-//               estrelas
-//             </p>
-//           </div>
-//         ))
-//       } */}
-//     </div>
-//   );
-// }
+function ProductReviews({ product }) {
+  return (
+    <div>
+      <h3>Avaliações:</h3>
+      {
+        product.ratting.map((review) => (
+          <div key={ review.title }>
+            <p>{review.stars}</p>
+            <h4>{review.title}</h4>
+            <p>{review.assessment}</p>
+          </div>
+        ))
+      }
+    </div>
+  );
+}
 
-// ProductReviews.propTypes = {
-//   product: PropTypes.shape({
-//     name: PropTypes.string.isRequired,
-//     rating: PropTypes.arrayOf(
-//       PropTypes.shape({
-//         title: PropTypes.string.isRequired,
-//         assessment: PropTypes.string.isRequired,
-//         stars: PropTypes.number.isRequired,
-//         image: PropTypes.string,
-//       }),
-//     ).isRequired,
-//   }).isRequired,
-// };
+ProductReviews.propTypes = {
+  product: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    ratting: PropTypes.arrayOf(
+      PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        stars: PropTypes.number.isRequired,
+        assessment: PropTypes.string.isRequired,
+      }),
+    ).isRequired,
+  }).isRequired,
+};
 
-// export default ProductReviews;
+export default ProductReviews;
