@@ -75,3 +75,7 @@
 .products-details-buy > button:hover {
   background-color: #fa3108; /* Cor laranja mais escura no hover */
 }
+
+.products-details-icons {
+  display: flex;
+}

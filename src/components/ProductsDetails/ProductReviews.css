@@ -42,6 +42,15 @@
   width: 1%;
 }
 
+.products-reviews-title {
+  display: flex;
+  align-items: center;
+}
+
+.products-reviews-title > img {
+  width: 2%;
+}
+
 .products-reviews-container p.stars {
   color: #ff5733; /* Cor laranja para a classificação de estrelas */
   font-size: 1.6rem;

@@ -12,9 +12,28 @@ function ProductReviews({ product }) {
   const FOUR = 4;
   const FIVE = 5;
 
+  function calculateAverageRating(ratting) {
+    const sum = ratting.reduce((total, rating) => total + rating.stars, 0);
+    return (sum / ratting.length).toFixed(2); // Limitando a duas casas decimais
+  }
+
   return (
     <div className="products-reviews-container">
-      <h3>Avaliações dos Usuários:</h3>
+
+      <div className="products-reviews-title">
+        <img src={ starFull } alt="" />
+        <h3>Avaliações dos Usuários:</h3>
+      </div>
+      {
+        product.ratting.length > 0 ? (
+          <div>
+            <p>{`Média de avaliações: ${calculateAverageRating(product.ratting)}`}</p>
+          </div>
+        ) : (
+          <p>Ainda não há avaliações.</p>
+        )
+      }
+
       {
         product.ratting.map((review) => (
           <div key={ review.title }>
@@ -26,6 +45,8 @@ function ProductReviews({ product }) {
               <img src={ review.stars >= FIVE ? starFull : starEmpty } alt="" />
             </div>
             <div>
+              <p>{review.client}</p>
+              <span>{review.data}</span>
               <h4>{review.title}</h4>
               <p>{review.assessment}</p>
             </div>
