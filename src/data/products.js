@@ -38,15 +38,15 @@ const products = [
     secondaryImage: imageGalaxy,
     ratting: [
       {
-        title: 'Uma bosta',
-        assessment: 'Nun gsotei desse celular trava muito',
+        title: 'Celular Muito Rápido',
+        assessment: 'Comprei Recentemente e estou gostando bastante',
         stars: 5,
         image: 'imagem',
         data: '2023-05-20',
       },
       {
-        title: 'Chegou rapido',
-        assessment: 'Uma bela Beleza',
+        title: 'Chegou Rápido',
+        assessment: 'Chegou no dia seguinte da compra',
         stars: 4,
         image: 'imagem',
         data: '2023-07-02',
