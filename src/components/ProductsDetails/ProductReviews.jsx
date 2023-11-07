@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './ProductReviews.css';
 
 function ProductReviews({ product }) {
   return (
-    <div>
+    <div className="products-reviews-container">
       <h3>Avaliações:</h3>
       {
         product.ratting.map((review) => (

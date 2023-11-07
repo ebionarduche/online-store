@@ -1,0 +1,42 @@
+/* Adicione estilos ao arquivo CSS do seu componente ProductReviews */
+
+.products-reviews-container {
+  border-top: 1px solid #ddd;
+  padding: 20px 0;
+}
+
+.products-reviews-container h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.products-reviews-container div {
+  margin-top: 20px;
+  border: 1px solid #eee;
+  padding: 20px;
+}
+
+.products-reviews-container p {
+  font-size: 1.2rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.products-reviews-container h4 {
+  font-size: 1.4rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+.products-reviews-container div p:first-child {
+  margin-top: 0;
+}
+
+.products-reviews-container p.stars {
+  color: #ff5733; /* Cor laranja para a classificação de estrelas */
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
