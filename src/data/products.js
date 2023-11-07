@@ -19,7 +19,7 @@ import imageMochila from './images/procuts/MochilaCamping.jpg';
 const products = [
   {
     id: 1,
-    name: 'Galaxy S10',
+    name: ' Samsung Galaxy S10',
     description: `Fotografia profissional no seu bolso Descubra
     infinitas possibilidades para suas fotos com as 3 câmeras principais de sua
     equipe Teste sua criatividade e jogue com iluminação,
@@ -834,6 +834,220 @@ const products = [
 
     ],
   },
+  {
+    id: 16,
+    name: 'Cadeira de Praia Reclinável',
+    description: `Relaxe na praia com conforto e estilo nesta cadeira reclinável.
+    Possui apoio para copos, bolsos para armazenamento e é fácil de transportar.
+    Perfeita para os dias ensolarados à beira-mar.`,
+    categories: 'Lazer',
+    subcategories: 'Cadeiras de Praia',
+    characteristics: {
+      stock: 15,
+      brand: 'Beach Essentials',
+      sales_format: 'Unidade',
+      cor: ['Azul', 'Vermelho', 'Amarelo'],
+    },
+    price: 39.99,
+    quantity: 1,
+    primaryImage: 'imagem',
+    secondaryImage: 'imagem',
+    ratting: [
+      {
+        client: 'PraiaMania',
+        title: 'Conforto à Beira-mar',
+        assessment: `Esta cadeira de praia é muito confortável.
+        Adoro os bolsos para armazenar minhas coisas e o suporte para copos é um toque
+        agradável. Perfeito para relaxar na praia!`,
+        stars: 5,
+        image: 'imagem',
+        data: '2024-05-10',
+      },
+      {
+        client: 'VeraneioTotal',
+        title: 'Ótima Escolha para as Férias',
+        assessment: `Comprei esta cadeira para as 
+        nossas férias de verão e não poderia estar
+        mais satisfeito. É reclinável e fácil de transportar. 
+        Altamente recomendada para quem ama a praia.`,
+        stars: 4,
+        image: 'imagem',
+        data: '2024-06-15',
+      },
+    ],
+  },
+  {
+    id: 17,
+    name: 'Conjunto de Panelas de Alumínio Fundido',
+    description: `Este conjunto de panelas de alumínio fundido
+    é perfeito para cozinhar suas refeições favoritas.
+    O alumínio fundido proporciona um aquecimento uniforme e durabilidade.
+    O conjunto inclui várias panelas de tamanhos diferentes para
+    todas as suas necessidades culinárias.`,
+    categories: 'Casa e Cozinha',
+    subcategories: 'Panelas',
+    characteristics: {
+      stock: 10,
+      brand: 'Chef Master',
+      sales_format: 'Conjunto',
+      cor: ['Preto'],
+    },
+    price: 199.99,
+    quantity: 1,
+    primaryImage: 'imagem',
+    secondaryImage: 'imagem',
+    ratting: [
+      {
+        client: 'ChefAmador',
+        title: 'Qualidade na Cozinha',
+        assessment: `Estas panelas de alumínio fundido são incríveis.
+        O aquecimento uniforme torna o cozimento muito mais fácil.
+        Este conjunto atende a todas as minhas necessidades na cozinha.`,
+        stars: 5,
+        image: 'imagem',
+        data: '2024-07-20',
+      },
+      {
+        client: 'AmanteDaCulinária',
+        title: 'Conjunto Completo',
+        assessment: `Este conjunto de panelas é um sonho para quem ama cozinhar. 
+        As panelas têm tamanhos variados, e o alumínio 
+        fundido é de alta qualidade. Um excelente investimento.`,
+        stars: 4,
+        image: 'imagem',
+        data: '2024-08-15',
+      },
+    ],
+  },
+  {
+    id: 18,
+    name: 'Tênis de Corrida Leve',
+    description: `Este tênis de corrida leve é perfeito 
+    para atletas e entusiastas da corrida.
+    Com amortecimento superior, é ideal para treinos diários e corridas longas.
+    O design moderno e conforto excepcional tornam-no 
+    uma escolha popular entre corredores.`,
+    categories: 'Esportes',
+    subcategories: 'Calçados Esportivos',
+    characteristics: {
+      stock: 30,
+      brand: 'SpeedRun',
+      sales_format: 'Unidade',
+      cor: ['Azul', 'Vermelho', 'Preto'],
+    },
+    price: 79.99,
+    quantity: 1,
+    primaryImage: 'imagem',
+    secondaryImage: 'imagem',
+    ratting: [
+      {
+        client: 'RunnerPro',
+        title: 'Conforto na Corrida',
+        assessment: `Estes tênis de corrida são incrivelmente leves e confortáveis.
+        Eles proporcionam um excelente amortecimento e suporte durante a corrida.
+        Estou muito satisfeito.`,
+        stars: 5,
+        image: 'imagem',
+        data: '2024-09-10',
+      },
+      {
+        client: 'CorredoraAmadora',
+        title: 'Ótima Escolha para Iniciantes',
+        assessment: `Comprei esses tênis como iniciante na
+        corrida e não poderia estar mais feliz.
+        Eles são leves e fáceis de usar. Perfeitos para treinos diários.`,
+        stars: 4,
+        image: 'imagem',
+        data: '2024-10-15',
+      },
+    ],
+  },
+  {
+    id: 19,
+    name: 'Samsung Galaxy S20',
+    description: `O Samsung Galaxy S20 é um smartphone
+    premium com uma tela de 6.2 polegadas e
+    resolução Quad HD. Possui uma câmera de 64MP para fotos incríveis.
+    Um poderoso processador
+    e 12GB de RAM garantem desempenho excepcional. Este é o dispositivo perfeito para quem
+    busca inovação e qualidade.`,
+    categories: 'Eletrônicos',
+    subcategories: 'Smartphones',
+    characteristics: {
+      stock: 50,
+      brand: 'Samsung',
+      sales_format: 'Unidade',
+      cor: ['Preto', 'Branco', 'Azul', 'Cinza'],
+    },
+    price: 1199.99,
+    quantity: 1,
+    primaryImage: 'imagem',
+    secondaryImage: 'imagem',
+    ratting: [
+      {
+        client: 'Maria Silva',
+        title: 'Ótimo Smartphone',
+        assessment: `O Galaxy S20 é incrível!
+        A câmera tira fotos nítidas e a tela é deslumbrante. Recomendo.`,
+        stars: 5,
+        image: 'imagem',
+        data: '2023-10-15',
+      },
+      {
+        client: 'José Santos',
+        title: 'Desempenho Surpreendente',
+        assessment: `Este smartphone é muito rápido e possui 
+        muita memória. Adoro o design também.`,
+        stars: 4,
+        image: 'imagem',
+        data: '2023-11-20',
+      },
+    ],
+  },
+
+  {
+    id: 20,
+    name: 'Apple iPhone 12 Pro Max',
+    description: `O Apple iPhone 12 Pro Max é um dos melhores iPhones já lançados.
+    Com sua tela Super Retina XDR de 6.7 polegadas e um sistema de câmera tripla,
+    é perfeito para fotografia.
+    O chip A14 Bionic proporciona desempenho excepcional.
+    Este é o iPhone ideal para os amantes
+    de tecnologia.`,
+    categories: 'Eletrônicos',
+    subcategories: 'Smartphones',
+    characteristics: {
+      stock: 40,
+      brand: 'Apple',
+      sales_format: 'Unidade',
+      cor: ['Prata', 'Dourado', 'Grafite', 'Azul'],
+    },
+    price: 1299.99,
+    quantity: 1,
+    primaryImage: 'imagem',
+    secondaryImage: 'imagem',
+    ratting: [
+      {
+        client: 'Carlos Oliveira',
+        title: 'Fotografia Incrível',
+        assessment: `As câmeras deste iPhone são incríveis.
+        As fotos saem perfeitas. Vale cada centavo.`,
+        stars: 5,
+        image: 'imagem',
+        data: '2023-09-10',
+      },
+      {
+        client: 'Ana Pereira',
+        title: 'Design Elegante',
+        assessment: `Adoro o design do iPhone 12 Pro Max.
+        É elegante e a tela é espetacular.`,
+        stars: 4,
+        image: 'imagem',
+        data: '2023-10-25',
+      },
+    ],
+  },
+
 ];
 
 export default products;
