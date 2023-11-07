@@ -3,37 +3,45 @@ import { useParams } from 'react-router-dom';
 import Header from '../components/Header';
 import products from '../data/products';
 import ProductReviews from '../components/ProductsDetails/ProductReviews';
-import '../components/ProductsDetails/ProductsDetails.css';
+import './styles/ProductsDetails.css';
 import cartIcon from '../data/icons/shopping-cart-icon.png';
+import favIcon from '../data/icons/icons-heart-off.png';
+import shareIcon from '../data/icons/share-icon.png';
+import Navgation from '../components/Navgation';
 
 function ProductsDetails() {
   const { id } = useParams();
   const productToShow = products[id - 1];
   return (
-    <div>
+    <div className="products-details">
       <Header />
+      <Navgation />
+      <h1>{productToShow.name}</h1>
+      <h2>{productToShow.characteristics.brand}</h2>
+
       <div className="products-details-container">
-        <h1>{productToShow.name}</h1>
-        <h2>{productToShow.characteristics.brand}</h2>
-        <img src={ productToShow.primaryImage } alt="" width="200px" />
-        <h2>
-          Cores disponiveis:
-          {' '}
-          {productToShow.characteristics.cor.join(', ')}
-        </h2>
+        <div className="products-details-illustrator">
+          <div className="products-details-icons">
+            <img src={ favIcon } alt="" width="30px" />
+            <img src={ shareIcon } alt="" width="30px" />
+          </div>
+          <img src={ productToShow.primaryImage } alt="" width="200px" />
+          <h2>{`Cores disponiveis: ${productToShow.characteristics.cor.join(', ')}`}</h2>
+        </div>
 
-        <span>{`R$ ${productToShow.price}`}</span>
-        <p>{productToShow.description}</p>
+        <div className="products-details-buy">
+          <span>{`R$ ${productToShow.price}`}</span>
+          <p>{productToShow.description}</p>
 
-        <button type="button">
-          Comprar
-        </button>
+          <button type="button"> Comprar </button>
 
-        <button type="button">
-          <img src={ cartIcon } alt="" width="10px" />
-        </button>
+          <button type="button">
+            <img src={ cartIcon } alt="" />
+          </button>
+        </div>
+
       </div>
-      <ProductReviews product={ products[id - 1] } />
+      <ProductReviews product={ productToShow } />
     </div>
   );
 }
