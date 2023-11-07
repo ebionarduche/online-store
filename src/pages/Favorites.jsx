@@ -10,7 +10,7 @@ function Favorites() {
       <Navgation />
       <h1>🧡 Favoritos</h1>
       <div className="favorite-container-content">
-        <h1>Não favoritou nenhum produto o ludimilo!</h1>
+        <h1>Você Não favoritou nenhum produto!</h1>
         <h1>🍃</h1>
       </div>
     </div>
