@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import Header from '../components/Header';
 import products from '../data/products';
 import ProductReviews from '../components/ProductsDetails/ProductReviews';
-import '../components/ProductsDetails/ProductsDetails.css';
+import './styles/ProductsDetails.css';
 import cartIcon from '../data/icons/shopping-cart-icon.png';
 
 function ProductsDetails() {

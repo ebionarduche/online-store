@@ -2,7 +2,7 @@ import React from 'react';
 import { useHistory } from 'react-router-dom'; // Importe o useHistory
 import cartIcon from '../data/icons/shopping-cart-icon.png';
 import Header from '../components/Header';
-import '../components/ShoppingCart/ShoppingCart.css';
+import './styles/ShoppingCart.css';
 
 function ShoppingCart() {
   const history = useHistory(); // Inicialize o useHistory
