@@ -10,30 +10,30 @@ function ProductsDetails() {
   const { id } = useParams();
   const productToShow = products[id - 1];
   return (
-    <div>
+    <div className="products-details">
       <Header />
+      <h1>{productToShow.name}</h1>
+      <h2>{productToShow.characteristics.brand}</h2>
+
       <div className="products-details-container">
-        <h1>{productToShow.name}</h1>
-        <h2>{productToShow.characteristics.brand}</h2>
-        <img src={ productToShow.primaryImage } alt="" width="200px" />
-        <h2>
-          Cores disponiveis:
-          {' '}
-          {productToShow.characteristics.cor.join(', ')}
-        </h2>
+        <div className="products-details-illustrator">
+          <img src={ productToShow.primaryImage } alt="" width="200px" />
+          <h2>{`Cores disponiveis: ${productToShow.characteristics.cor.join(', ')}`}</h2>
+        </div>
 
-        <span>{`R$ ${productToShow.price}`}</span>
-        <p>{productToShow.description}</p>
+        <div className="products-details-buy">
+          <span>{`R$ ${productToShow.price}`}</span>
+          <p>{productToShow.description}</p>
 
-        <button type="button">
-          Comprar
-        </button>
+          <button type="button"> Comprar </button>
 
-        <button type="button">
-          <img src={ cartIcon } alt="" width="10px" />
-        </button>
+          <button type="button">
+            <img src={ cartIcon } alt="" />
+          </button>
+        </div>
+
       </div>
-      <ProductReviews product={ products[id - 1] } />
+      <ProductReviews product={ productToShow } />
     </div>
   );
 }

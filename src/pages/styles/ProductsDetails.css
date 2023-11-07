@@ -1,22 +1,38 @@
 
 .products-details-container {
-  max-width: 800px;
-  margin: 0 auto;
+  display: flex;
   padding: 20px;
+  text-align: center;
+  
+}
+
+.products-details > h1{
+  font-size: 3.2rem;
+  color: #333;
   text-align: center;
 }
 
-.products-details-container h1 {
-  font-size: 2.5rem;
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
-
-.products-details-container h2 {
+.products-details h2 {
   font-size: 1.8rem;
   color: #555;
   margin-top: 10px;
+  text-align: center;
+
+}
+
+.products-details-illustrator {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+}
+
+
+.products-details-buy {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+
 }
 
 .products-details-container img {
@@ -29,7 +45,7 @@
   color: #777;
 }
 
-.products-details-container span {
+.products-details-buy > span {
   font-size: 2rem;
   font-weight: bold;
   color: #ff5733;
@@ -37,14 +53,14 @@
   margin: 10px 0;
 }
 
-.products-details-container p {
+.products-details-buy > p {
   font-size: 1.2rem;
   color: #444;
   line-height: 1.6;
 }
 
 
-.products-details-container > button {
+.products-details-buy > button {
   background-color: #ff5733; /* Cor laranja */
   color: #fff;
   padding: 15px 30px;
@@ -56,6 +72,6 @@
   transition: background-color 0.3s;
 }
 
-.products-details-container > button:hover {
+.products-details-buy > button:hover {
   background-color: #fa3108; /* Cor laranja mais escura no hover */
 }

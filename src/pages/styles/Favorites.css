@@ -1,0 +1,13 @@
+.favorite-container-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 5vh); /* Ajusta a altura para ocupar 100% da viewport a partir da margem superior */
+  background-color: #fff;
+}
+
+.favorite-container {
+  background-color: #fff;
+}
