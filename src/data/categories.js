@@ -19,6 +19,14 @@ const categories = [
     id: 5,
     category: 'Ferramentas',
   },
+  {
+    id: 6,
+    category: 'Lazer',
+  },
+  {
+    id: 7,
+    category: 'Cozinha',
+  },
 ];
 
 export default categories;

@@ -5,17 +5,15 @@ import './ProductReviews.css';
 import starFull from '../../data/icons/icons-star-cheia.png';
 import starEmpty from '../../data/icons/icons-star-vazada.png';
 
+import generateStarRating from '../../utils/genereteStarRating';
+import calculateAverageRating from '../../utils/calculateAverageRating';
+
 function ProductReviews({ product }) {
   const ONE = 1;
   const TWO = 2;
   const THREE = 3;
   const FOUR = 4;
   const FIVE = 5;
-
-  function calculateAverageRating(ratting) {
-    const sum = ratting.reduce((total, rating) => total + rating.stars, 0);
-    return (sum / ratting.length).toFixed(2); // Limitando a duas casas decimais
-  }
 
   return (
     <div className="products-reviews-container">
@@ -28,6 +26,7 @@ function ProductReviews({ product }) {
         product.ratting.length > 0 ? (
           <div>
             <p>{`Média de avaliações: ${calculateAverageRating(product.ratting)}`}</p>
+            <div>{generateStarRating(calculateAverageRating(product.ratting))}</div>
           </div>
         ) : (
           <p>Ainda não há avaliações.</p>
@@ -37,16 +36,16 @@ function ProductReviews({ product }) {
       {
         product.ratting.map((review) => (
           <div key={ review.title }>
-            <div className="products-reviews-stars">
-              <img src={ review.stars >= ONE ? starFull : starEmpty } alt="" />
-              <img src={ review.stars >= TWO ? starFull : starEmpty } alt="" />
-              <img src={ review.stars >= THREE ? starFull : starEmpty } alt="" />
-              <img src={ review.stars >= FOUR ? starFull : starEmpty } alt="" />
-              <img src={ review.stars >= FIVE ? starFull : starEmpty } alt="" />
-            </div>
             <div>
-              <p>{review.client}</p>
+              <h5>{review.client}</h5>
               <span>{review.data}</span>
+              <div className="products-reviews-stars">
+                <img src={ review.stars >= ONE ? starFull : starEmpty } alt="" />
+                <img src={ review.stars >= TWO ? starFull : starEmpty } alt="" />
+                <img src={ review.stars >= THREE ? starFull : starEmpty } alt="" />
+                <img src={ review.stars >= FOUR ? starFull : starEmpty } alt="" />
+                <img src={ review.stars >= FIVE ? starFull : starEmpty } alt="" />
+              </div>
               <h4>{review.title}</h4>
               <p>{review.assessment}</p>
             </div>

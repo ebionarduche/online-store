@@ -3,6 +3,7 @@ import { useHistory } from 'react-router-dom'; // Importe o useHistory
 import cartIcon from '../data/icons/shopping-cart-icon.png';
 import Header from '../components/Header';
 import './styles/ShoppingCart.css';
+import Footer from '../components/Footer';
 
 function ShoppingCart() {
   const history = useHistory(); // Inicialize o useHistory
@@ -24,6 +25,7 @@ function ShoppingCart() {
           </div>
         </button>
       </div>
+      <Footer />
     </div>
   );
 }

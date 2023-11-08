@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import './styles/Favorites.css';
 import Navgation from '../components/Navgation';
+import Footer from '../components/Footer';
 
 function Favorites() {
   return (
@@ -13,6 +14,7 @@ function Favorites() {
         <h1>Você Não favoritou nenhum produto!</h1>
         <h1>🍃</h1>
       </div>
+      <Footer />
     </div>
   );
 }
