@@ -15,6 +15,7 @@ function generateStarRating(rating) {
   for (let i = 0; i < fullStars; i++) {
     stars.push(
       <span key={ i }>
+        <img src={ starFull } alt="" width="25px" />
         <img src={ starFull } alt="" />
       </span>,
     );
@@ -24,6 +25,7 @@ function generateStarRating(rating) {
   if (halfStar) {
     stars.push(
       <span key="half">
+        <img src={ starHalf } alt="" width="25px" />
         <img src={ starHalf } alt="" />
       </span>,
     );
@@ -33,6 +35,7 @@ function generateStarRating(rating) {
   for (let i = 0; i < emptyStars; i++) {
     stars.push(
       <span key={ `empty-${i}` }>
+        <img src={ starEmpty } alt="" width="25px" />
         <img src={ starEmpty } alt="" />
       </span>,
     );

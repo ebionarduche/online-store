@@ -37,6 +37,17 @@
   margin: 1%;
 }
 
+.products-details-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.products-details-icons > img {
+  width: 10%;
+  margin-left: 5px;
+}
+
 
 .products-details-icons > img {
   margin: 1%;  

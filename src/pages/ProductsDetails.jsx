@@ -1,5 +1,8 @@
 import './styles/ProductsDetails.css';
 
+import React, { useContext } from 'react';
+import { useParams } from 'react-router-dom';
+import CartContext from '../context/CartContext';
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
@@ -17,6 +20,7 @@ import generateStarRating from '../utils/genereteStarRating';
 import calculateAverageRating from '../utils/calculateAverageRating';
 
 function ProductsDetails() {
+  const { InsertProductCart } = useContext(CartContext);
   const { id } = useParams();
   const productToShow = products[id - 1];
   return (
@@ -29,6 +33,9 @@ function ProductsDetails() {
         <div className="products-details-illustrator">
 
           <div className="products-details-icons">
+            {
+              generateStarRating(calculateAverageRating(productToShow.ratting))
+            }
             <div>{generateStarRating(calculateAverageRating(productToShow.ratting))}</div>
             <img src={ favIcon } alt="" width="30px" />
             <img src={ shareIcon } alt="" width="30px" />
@@ -45,7 +52,10 @@ function ProductsDetails() {
 
           <button type="button"> Comprar </button>
 
-          <button type="button">
+          <button
+            type="button"
+            onClick={ () => InsertProductCart(productToShow) }
+          >
             <img src={ cartIcon } alt="" />
           </button>
         </div>
