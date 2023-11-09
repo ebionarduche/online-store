@@ -1,13 +1,20 @@
+import './styles/ProductsDetails.css';
+
 import React from 'react';
 import { useParams } from 'react-router-dom';
+
 import Header from '../components/Header';
-import products from '../data/products';
 import ProductReviews from '../components/ProductsDetails/ProductReviews';
-import './styles/ProductsDetails.css';
+import Navgation from '../components/Navgation';
+import Footer from '../components/Footer';
+
 import cartIcon from '../data/icons/shopping-cart-icon.png';
 import favIcon from '../data/icons/icons-heart-off.png';
 import shareIcon from '../data/icons/share-icon.png';
-import Navgation from '../components/Navgation';
+
+import products from '../data/products';
+import generateStarRating from '../utils/genereteStarRating';
+import calculateAverageRating from '../utils/calculateAverageRating';
 
 function ProductsDetails() {
   const { id } = useParams();
@@ -17,15 +24,18 @@ function ProductsDetails() {
       <Header />
       <Navgation />
       <h1>{productToShow.name}</h1>
-      <h2>{productToShow.characteristics.brand}</h2>
 
       <div className="products-details-container">
         <div className="products-details-illustrator">
+
           <div className="products-details-icons">
+            <div>{generateStarRating(calculateAverageRating(productToShow.ratting))}</div>
             <img src={ favIcon } alt="" width="30px" />
             <img src={ shareIcon } alt="" width="30px" />
           </div>
-          <img src={ productToShow.primaryImage } alt="" width="200px" />
+
+          <img src={ productToShow.primaryImage } alt="" />
+          <h2>{productToShow.characteristics.brand}</h2>
           <h2>{`Cores disponiveis: ${productToShow.characteristics.cor.join(', ')}`}</h2>
         </div>
 
@@ -42,6 +52,7 @@ function ProductsDetails() {
 
       </div>
       <ProductReviews product={ productToShow } />
+      <Footer />
     </div>
   );
 }

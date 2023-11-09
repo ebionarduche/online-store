@@ -15,6 +15,11 @@ import imageSmartwatch from './images/procuts/RelogioXiaomi.jpeg';
 import imagePanelaEletrica from './images/procuts/PanelaEletrica.jpg';
 import imageNotebook from './images/procuts/NotebookAcer.jpg';
 import imageMochila from './images/procuts/MochilaCamping.jpg';
+import imageCadeiraPraia from './images/procuts/CadeiraDePraia.jpg';
+import imageConjPanela from './images/procuts/ConjPanela.jpg';
+import imageTenisCorrida from './images/procuts/TenisDeCorrida.jpg';
+import imageGalaxyS20 from './images/procuts/GalaxyS20.jpg';
+import imageInphone12 from './images/procuts/Iphone12.jpeg';
 
 const products = [
   {
@@ -850,8 +855,8 @@ const products = [
     },
     price: 39.99,
     quantity: 1,
-    primaryImage: 'imagem',
-    secondaryImage: 'imagem',
+    primaryImage: imageCadeiraPraia,
+    secondaryImage: imageCadeiraPraia,
     ratting: [
       {
         client: 'PraiaMania',
@@ -884,7 +889,7 @@ const products = [
     O alumínio fundido proporciona um aquecimento uniforme e durabilidade.
     O conjunto inclui várias panelas de tamanhos diferentes para
     todas as suas necessidades culinárias.`,
-    categories: 'Casa e Cozinha',
+    categories: 'Cozinha',
     subcategories: 'Panelas',
     characteristics: {
       stock: 10,
@@ -894,8 +899,8 @@ const products = [
     },
     price: 199.99,
     quantity: 1,
-    primaryImage: 'imagem',
-    secondaryImage: 'imagem',
+    primaryImage: imageConjPanela,
+    secondaryImage: imageConjPanela,
     ratting: [
       {
         client: 'ChefAmador',
@@ -903,7 +908,7 @@ const products = [
         assessment: `Estas panelas de alumínio fundido são incríveis.
         O aquecimento uniforme torna o cozimento muito mais fácil.
         Este conjunto atende a todas as minhas necessidades na cozinha.`,
-        stars: 5,
+        stars: 4,
         image: 'imagem',
         data: '2024-07-20',
       },
@@ -914,6 +919,26 @@ const products = [
         As panelas têm tamanhos variados, e o alumínio 
         fundido é de alta qualidade. Um excelente investimento.`,
         stars: 4,
+        image: 'imagem',
+        data: '2024-08-15',
+      },
+      {
+        client: 'AmanteDaCulinária',
+        title: 'Conjunto Completo',
+        assessment: `Este conjunto de panelas é um sonho para quem ama cozinhar. 
+        As panelas têm tamanhos variados, e o alumínio 
+        fundido é de alta qualidade. Um excelente investimento.`,
+        stars: 1,
+        image: 'imagem',
+        data: '2024-08-15',
+      },
+      {
+        client: 'AmanteDaCulinária',
+        title: 'Conjunto Completo',
+        assessment: `Este conjunto de panelas é um sonho para quem ama cozinhar. 
+        As panelas têm tamanhos variados, e o alumínio 
+        fundido é de alta qualidade. Um excelente investimento.`,
+        stars: 1,
         image: 'imagem',
         data: '2024-08-15',
       },
@@ -937,8 +962,8 @@ const products = [
     },
     price: 79.99,
     quantity: 1,
-    primaryImage: 'imagem',
-    secondaryImage: 'imagem',
+    primaryImage: imageTenisCorrida,
+    secondaryImage: imageTenisCorrida,
     ratting: [
       {
         client: 'RunnerPro',
@@ -981,8 +1006,8 @@ const products = [
     },
     price: 1199.99,
     quantity: 1,
-    primaryImage: 'imagem',
-    secondaryImage: 'imagem',
+    primaryImage: imageGalaxyS20,
+    secondaryImage: imageGalaxyS20,
     ratting: [
       {
         client: 'Maria Silva',
@@ -1004,7 +1029,6 @@ const products = [
       },
     ],
   },
-
   {
     id: 20,
     name: 'Apple iPhone 12 Pro Max',
@@ -1024,8 +1048,8 @@ const products = [
     },
     price: 1299.99,
     quantity: 1,
-    primaryImage: 'imagem',
-    secondaryImage: 'imagem',
+    primaryImage: imageInphone12,
+    secondaryImage: imageInphone12,
     ratting: [
       {
         client: 'Carlos Oliveira',
