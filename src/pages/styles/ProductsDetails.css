@@ -46,6 +46,11 @@
 .products-details-icons > img {
   width: 10%;
   margin-left: 5px;
+}
+
+
+.products-details-icons > img {
+  margin: 1%;  
   /* espaçamento só nas imagens  */
 }
 
@@ -81,3 +86,6 @@
   background-color: #fa3108; /* Cor laranja mais escura no hover */
 }
 
+.products-details-icons {
+  display: flex;
+}
