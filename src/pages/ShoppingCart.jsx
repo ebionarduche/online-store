@@ -6,7 +6,6 @@ import './styles/ShoppingCart.css';
 import Footer from '../components/Footer';
 import CartContext from '../context/CartContext';
 
-
 function ShoppingCart() {
   const { shoppingCart } = useContext(CartContext);
   // const [toggle, setToggle] = useState(false)

@@ -3,8 +3,6 @@ import './styles/ProductsDetails.css';
 import React, { useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import CartContext from '../context/CartContext';
-import React from 'react';
-import { useParams } from 'react-router-dom';
 
 import Header from '../components/Header';
 import ProductReviews from '../components/ProductsDetails/ProductReviews';
@@ -36,7 +34,6 @@ function ProductsDetails() {
             {
               generateStarRating(calculateAverageRating(productToShow.ratting))
             }
-            <div>{generateStarRating(calculateAverageRating(productToShow.ratting))}</div>
             <img src={ favIcon } alt="" width="30px" />
             <img src={ shareIcon } alt="" width="30px" />
           </div>
