@@ -4,7 +4,7 @@
   width: 100%;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 5vh); /* Ajusta a altura para ocupar 100% da viewport a partir da margem superior */
+  /* height: calc(100vh - 5vh);  */
   background-color: rgb(219, 218, 218);
   
 }
@@ -31,7 +31,7 @@
 
 .shopping-cart-container > button {
   font-size: 1.5rem;
-  background-color: #007bff; 
+  background-color: #000000; 
   color: #fff; 
   padding: 10px 20px; 
   border: none; 
@@ -44,3 +44,25 @@
 .shopping-cart-container > button:hover {
   background-color: #0056b3; 
 }
+
+.shopping-cart-card {
+  display: flex;
+  width: 60%;
+  border-radius: 25px;
+  background-color: rgb(194, 194, 194);
+  margin: 1%;
+  justify-content: space-between;
+  padding: 1%;
+} 
+
+.shopping-cart-card > img {
+  width: 120px;
+} 
+
+.shopping-cart-card > div > h1 {
+  font-size: 1.2rem;
+} 
+
+.shopping-cart-card > p {
+  font-size: 1.5rem;
+} 
