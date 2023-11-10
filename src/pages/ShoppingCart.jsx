@@ -21,11 +21,16 @@ function ShoppingCart() {
       <div className="shopping-cart-container">
         {
           shoppingCart.map((product) => (
-            <div key={ product.id }>
-              <h1>{product.productName}</h1>
-              <h2>{product.brand}</h2>
-              <p>{product.price}</p>
+            <div className="shopping-cart-card" key={ product.id }>
+
               <img src={ product.image } alt="" />
+              <div>
+                <h1>{product.productName}</h1>
+                <h2>{product.brand}</h2>
+              </div>
+              <s>Quantidade +-</s>
+              <s>Remover </s>
+              <p>{product.price}</p>
             </div>
           ))
         }
