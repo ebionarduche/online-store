@@ -24,7 +24,7 @@ import imageInphone12 from './images/procuts/Iphone12.png';
 const products = [
   {
     id: 1,
-    name: ' Samsung Galaxy S10',
+    name: ' Samsung Galaxy S10 - (256GB)',
     description: `Fotografia profissional no seu bolso Descubra
     infinitas possibilidades para suas fotos com as 3 câmeras principais de sua
     equipe Teste sua criatividade e jogue com iluminação,
@@ -81,7 +81,7 @@ const products = [
   },
   {
     id: 2,
-    name: 'Fritadeira Air Fryer',
+    name: 'Fritadeira Air Fryer 4l Mundial',
     description: `A Fritadeira Sem Óleo Air Fryer Afn40-bft 4l 1500w Mondial é prática,
     rápida e saudável! Com a tecnologia de circulação de ar quente, ela cozinha, frita,
     assa ou tosta os alimentos sem precisar adicionar óleo.`,
@@ -355,7 +355,7 @@ const products = [
   },
   {
     id: 8,
-    name: 'Bicicleta Aro 29 Krw Alumínio 24 Vel Freio A Disco X42',
+    name: 'Bicicleta Aro 29 Krw Alumínio 24 Vel',
     description: `A bicicleta KRW X42 foi desenvolvida para quem quer
     realizar um passeio e pegar trilhas leves. Com seu quadro em alumínio
     6061, fornece segurança e leveza no seu pedal. Possuí diversas cores
@@ -539,7 +539,7 @@ const products = [
   },
   {
     id: 11,
-    name: 'Câmera Digital 20MP',
+    name: 'Câmera Digital 200MP Canon',
     description: `Capture momentos especiais com esta câmera digital de
     20 megapixels. Fotos de alta qualidade garantidas.`,
     categories: 'Eletronico',
@@ -643,7 +643,7 @@ const products = [
   },
   {
     id: 13,
-    name: 'Panela Elétrica de Arroz',
+    name: 'Panela Elétrica de Arroz 10XC Britânia',
     description: `Prepare arroz perfeito com esta panela elétrica. Fácil de
     usar e com resultados deliciosos.`,
     categories: 'Eletrodomésticos',
@@ -946,7 +946,7 @@ const products = [
   },
   {
     id: 18,
-    name: 'Tênis de Corrida Leve',
+    name: 'Tênis Academia e Caminhada Ultra Leve',
     description: `Este tênis de corrida leve é perfeito 
     para atletas e entusiastas da corrida.
     Com amortecimento superior, é ideal para treinos diários e corridas longas.
@@ -989,7 +989,7 @@ const products = [
   },
   {
     id: 19,
-    name: 'Samsung Galaxy S20',
+    name: 'Samsung SmartPhone Galaxy S20  - (128 GB)',
     description: `O Samsung Galaxy S20 é um smartphone
     premium com uma tela de 6.2 polegadas e
     resolução Quad HD. Possui uma câmera de 64MP para fotos incríveis.
@@ -1031,7 +1031,7 @@ const products = [
   },
   {
     id: 20,
-    name: 'Apple iPhone 12 Pro Max',
+    name: 'Apple iPhone 12 Pro Max - (128 GB)',
     description: `O Apple iPhone 12 Pro Max é um dos melhores iPhones já lançados.
     Com sua tela Super Retina XDR de 6.7 polegadas e um sistema de câmera tripla,
     é perfeito para fotografia.

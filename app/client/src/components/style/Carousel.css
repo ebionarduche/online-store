@@ -1,0 +1,92 @@
+.carousel {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.carousel-container::-webkit-scrollbar {
+  height: 5px;
+  background-color: #ff583348;
+  border-radius: 10px;
+}
+
+.carousel-container::-webkit-scrollbar-thumb {
+  background-color: #ff5733;
+  border-radius: 10px;
+}
+
+.carousel-container {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 2.5%;
+  justify-content: center;
+  width: 80%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.carousel-item {
+  flex: 0 0 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5%;
+  margin: 5px;
+  background-color: #fff;
+  border: 3px solid rgba(135, 196, 180, 0.256);
+}
+
+.carousel-item > h1 {
+  color: black;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.carousel-item > h2 {
+  color: black;
+  font-size: 0.8rem;
+}
+
+.carousel-image > img {
+  width: 100%;
+}
+
+.carousel-item > span {
+  margin-top: 25%;
+  margin-bottom: 10%;
+  font-size: 1rem;
+}
+
+.carousel-item > button {
+  background-color: #ff5733;
+  color: #fff;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+}
+
+.carousel-item > button:hover {
+  background-color: #0056b3;
+}
+
+.carousel-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 50%;
+}
+
+.carousel > button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.carousel > button > img {
+  width: 40%;
+}
