@@ -1,22 +1,21 @@
 .card-container {
   display: flex;
   flex-wrap: wrap ;
-  padding: 2.5%;
+  padding: 1%;
   justify-content: center;
-  width: 100%
+  width: 100%;
+  margin: 1%;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: first baseline;
   align-items: center;
-  padding: 10px;
   width: 20%;
-  border-radius: 5%;
-  margin: 5%;
+  margin: 1.5%;
   background-color: #fff;
-  border: 3px solid rgba(135, 196, 180, 0.256);
+  border: 1px solid rgba(135, 196, 180, 0.256);
 }
 
 
@@ -39,8 +38,14 @@
   font-size: 1rem;
 }
 
+.card-image {
+  /* width: 100%; */
+  height: 200px;
+  max-height: 200px;
+  }
+
 .card-image > img {
-  width: 100%;
+  height: 200px;
 }
 
 .card > span {
@@ -64,3 +69,9 @@
 .card > button:hover {
   background-color: #0056b3; /* Cor de fundo alterada no hover */
 }
+
+.iconSGV {
+  width: 50px;
+  stroke: none;
+  fill: pink;
+} 
