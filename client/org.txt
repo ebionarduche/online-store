@@ -1,0 +1,19 @@
+Back-End
+
+- TypeScript
+  - init
+  - TsConfig
+- Docker
+  -Dockerfile
+  -Componse
+- Sequelize 
+  - init 
+  - Model
+  - Migrations
+  - Seeders
+- MySql
+  - Teste Funcionamento
+  - Normalização de Tabela
+- Node.js
+  - Server
+  - Express

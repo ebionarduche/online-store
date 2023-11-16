@@ -16,6 +16,7 @@ import shareIcon from '../data/icons/share-icon.png';
 import products from '../data/products';
 import generateStarRating from '../utils/genereteStarRating';
 import calculateAverageRating from '../utils/calculateAverageRating';
+import Carousel from '../components/Carousel';
 
 function ProductsDetails() {
   const { InsertProductCart } = useContext(CartContext);
@@ -55,6 +56,7 @@ function ProductsDetails() {
           >
             <img src={ cartIcon } alt="" />
           </button>
+          <Carousel />
         </div>
 
       </div>
