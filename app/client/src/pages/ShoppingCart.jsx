@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import './styles/ShoppingCart.css';
 import Footer from '../components/Footer';
 import CartContext from '../context/CartContext';
+import ResumeCart from '../components/ShoppingCart/ResumeCart';
 
 function ShoppingCart() {
   const { shoppingCart } = useContext(CartContext);
@@ -36,6 +37,7 @@ function ShoppingCart() {
         }
         <h1>Seu carrinho está vazio</h1>
         <span>Deseja olhar outros produtos similares</span>
+        <ResumeCart price={ shoppingCart.map(({ price }) => price) } />
         <button type="button" onClick={ handleContinueShopping }>
           <div className="cart-button-container">
             <img src={ cartIcon } alt="" />
