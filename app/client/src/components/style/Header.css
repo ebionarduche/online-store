@@ -5,6 +5,6 @@
   align-content: flex-start;
   justify-content: space-around;
   align-items: baseline;
-  background-color: rgba(135, 196, 180, 0.256);
+  background-color: rgb(255, 255, 255);
   border: 1px solid rgba(135, 196, 180, 0.256);
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useHistory, Link } from 'react-router-dom'; // Importe o useHistory
+import { useHistory, Link } from 'react-router-dom';
 
 import './style/Header.css';
 import profileIcon from '../data/icons/profile-icon.png';
