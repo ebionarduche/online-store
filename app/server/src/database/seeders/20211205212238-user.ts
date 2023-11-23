@@ -8,16 +8,16 @@ export default {
   
       },
       {
-        username: 'User',
+        username: 'Nataline-Shots',
         // senha: secret_user
       },
       // os logins abaixo são intencionalmente inválidos, pois serão usados nos testes
       {
-        username: 'User',
+        username: 'Gap-Nelson',
         // senha: secret_user
       },
       {
-        username: 'User',
+        username: 'Ebio-Naruto',
         // senha: 12345
       },
     ], {});
