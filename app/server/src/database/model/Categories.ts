@@ -1,32 +1,33 @@
 import {
   DataTypes,
   Model,
-  // InferAttributes,
-  // InferCreationAttributes,
+  InferAttributes,
+  InferCreationAttributes,
 } from 'sequelize';
 import db from '.';
 
-class User extends Model{
+class Categories extends Model<InferAttributes<Categories>,
+InferCreationAttributes<Categories>> {
   declare id: number;
-  declare username: string;
-
+  declare category: string;
 }
-User.init({
+
+Categories.init({
   id: {
     type: DataTypes.INTEGER,
     allowNull: false,
     primaryKey: true,
     autoIncrement: true,
   },
-  username: {
+  category: {
     type: DataTypes.INTEGER,
     allowNull: false,
   },
 }, {
   sequelize: db,
-  modelName: 'User',
+  modelName: 'categories',
   timestamps: false,
   underscored: true,
 });
 
-export default User;
+export default Categories;
