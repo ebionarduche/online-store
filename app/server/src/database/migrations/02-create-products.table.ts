@@ -1,5 +1,5 @@
-import { Model, QueryInterface, DataTypes } from "sequelize";
-import { IProducts } from "../interfaces/IProducts";
+import { Model, QueryInterface, DataTypes } from 'sequelize';
+import { IProducts } from '../interfaces/IProducts';
 
 export default {
   up(queryInterface: QueryInterface) {
@@ -15,7 +15,7 @@ export default {
         allowNull: false,
       },
       description: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
         allowNull: false,
       },
       categoriesId: {
@@ -25,7 +25,7 @@ export default {
           model: 'categories',
           key: 'id',
         },
-        field: 'categories_id'
+        field: 'categories_id',
       },
       stock: {
         type: DataTypes.INTEGER,
@@ -45,16 +45,16 @@ export default {
         allowNull: false,
       },
       price: {
-        type: DataTypes.DECIMAL,
+        type: DataTypes.DECIMAL(10, 2),
         allowNull: false,
       },
       quantity: {
         type: DataTypes.INTEGER,
         allowNull: false,
       },
-    })
+    });
   },
   down(queryInterface: QueryInterface) {
-    return(queryInterface.dropTable('products'))
-  }
-}
+    return queryInterface.dropTable('products');
+  },
+};
