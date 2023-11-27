@@ -4,8 +4,8 @@
     "module": "commonjs",
     "esModuleInterop": true,
     "sourceMap": true,
-    "outDir": "./build",  // Mantenha o caminho relativo à raiz do projeto
-    "rootDir": "./src",   // Mantenha o caminho relativo à raiz do projeto
+    "outDir": "./build", // Mantenha o caminho relativo à raiz do projeto
+    "rootDir": "./src", // Mantenha o caminho relativo à raiz do projeto
     "strict": true,
     "moduleResolution": "node",
     "baseUrl": ".",
@@ -18,6 +18,6 @@
       "*": ["node_modules/*"]
     }
   },
-  "include": ["src/**/*"],   // Mantenha o caminho relativo à raiz do projeto
-  "exclude": ["src/tests"]    // Mantenha o caminho relativo à raiz do projeto
+  "include": ["src/**/*"], // Mantenha o caminho relativo à raiz do projeto
+  "exclude": ["src/tests"] // Mantenha o caminho relativo à raiz do projeto
 }

@@ -16,7 +16,7 @@ Products.init({
         autoIncrement: true,
     },
     name: {
-        type: sequelize_1.DataTypes.INTEGER,
+        type: sequelize_1.DataTypes.STRING,
         allowNull: false,
     },
     description: {

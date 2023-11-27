@@ -11,8 +11,13 @@ class App {
         this.app = (0, express_1.default)();
         this.config();
         // Não remover essa rota
-        this.app.get('/', (req, res) => res.json({ ok: true }));
+        this.app.get('/', (_req, res) => res.json({ ok: true }));
+        this.app.get('/test', (_req, res) => res.json({ ok: 'teste' }));
+        // this.app.use(router);
     }
+    // private routes(): void {
+    //   this.app.use(router);
+    // }
     config() {
         const accessControl = (_req, res, next) => {
             res.header('Access-Control-Allow-Origin', '*');
