@@ -21,11 +21,11 @@ exports.default = {
             categoriesId: {
                 type: sequelize_1.DataTypes.INTEGER,
                 allowNull: false,
+                field: 'categories_id',
                 references: {
                     model: 'categories',
                     key: 'id',
                 },
-                field: 'categories_id',
             },
             stock: {
                 type: sequelize_1.DataTypes.INTEGER,

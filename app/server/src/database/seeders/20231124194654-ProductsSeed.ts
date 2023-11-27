@@ -11,7 +11,7 @@ export default {
           infinitas possibilidades para suas fotos com as 3 câmeras principais de sua
           equipe Teste sua criatividade e jogue com iluminação,
           diferentes planos e efeitos para obter ótimos resultados.`,
-          categories_id: 1,
+          categories_id: 2,
           stock: 50,
           brand: 'Samsung',
           sales_format: 'Unidade',
