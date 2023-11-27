@@ -21,11 +21,11 @@ export default {
       categoriesId: {
         type: DataTypes.INTEGER,
         allowNull: false,
+        field: 'categories_id',
         references: {
           model: 'categories',
           key: 'id',
         },
-        field: 'categories_id',
       },
       stock: {
         type: DataTypes.INTEGER,
