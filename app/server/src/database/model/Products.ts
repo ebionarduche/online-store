@@ -24,7 +24,7 @@ Products.init(
       autoIncrement: true,
     },
     name: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     description: {

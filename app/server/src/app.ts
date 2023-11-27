@@ -1,6 +1,5 @@
 import express from 'express';
 import router from './routers';
-
 class App {
   public app: express.Express;
 
@@ -11,8 +10,14 @@ class App {
 
     // Não remover essa rota
 
-    this.app.get('/', (req, res) => res.json({ ok: true }));
+    this.app.get('/', (_req, res) => res.json({ ok: true }));
+    this.app.get('/test', (_req, res) => res.json({ ok: 'teste' }));
+    // this.app.use(router);
   }
+
+  // private routes(): void {
+  //   this.app.use(router);
+  // }
 
   private config(): void {
     const accessControl: express.RequestHandler = (_req, res, next) => {
