@@ -1,0 +1,1 @@
+{"version":3,"file":"RatingModel.js","sourceRoot":"","sources":["../../../src/api/model/RatingModel.ts"],"names":[],"mappings":";;;;;AACA,yEAAiD;AAEjD,MAAqB,WAAW;IAAhC;QACU,UAAK,GAAG,gBAAM,CAAC;IAMzB,CAAC;IAJC,KAAK,CAAC,OAAO;QACX,MAAM,IAAI,GAAG,MAAM,IAAI,CAAC,KAAK,CAAC,OAAO,EAAE,CAAC;QACxC,OAAO,IAAI,CAAC;IACd,CAAC;CACF;AAPD,8BAOC"}
