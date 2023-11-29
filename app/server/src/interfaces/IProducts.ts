@@ -10,3 +10,7 @@ export interface IProducts {
   price: number;
   quantity: number;
 }
+
+export default interface IProductsModel {
+  findAll(): Promise<IProducts[]>;
+}

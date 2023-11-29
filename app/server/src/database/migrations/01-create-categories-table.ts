@@ -1,6 +1,5 @@
-import { Model, QueryInterface, DataTypes } from "sequelize";
-import { ICategories } from "../interfaces/ICategories";
-
+import { Model, QueryInterface, DataTypes } from 'sequelize';
+import { ICategories } from '../../interfaces/ICategories';
 
 export default {
   up(queryInterface: QueryInterface) {
@@ -13,12 +12,11 @@ export default {
       },
       category: {
         type: DataTypes.STRING,
-        allowNull: false
-      }
-    })
+        allowNull: false,
+      },
+    });
   },
   down(queryInterface: QueryInterface) {
-    return queryInterface.dropTable('categories')
-  }
-
-}
+    return queryInterface.dropTable('categories');
+  },
+};
