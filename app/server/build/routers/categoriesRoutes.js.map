@@ -1,1 +1,1 @@
-{"version":3,"file":"categoriesRoutes.js","sourceRoot":"","sources":["../../src/routers/categoriesRoutes.ts"],"names":[],"mappings":""}
+{"version":3,"file":"categoriesRoutes.js","sourceRoot":"","sources":["../../src/routers/categoriesRoutes.ts"],"names":[],"mappings":";;;;;AAAA,qCAAoD;AACpD,mGAA2E;AAE3E,MAAM,oBAAoB,GAAG,IAAI,8BAAoB,EAAE,CAAC;AACxD,MAAM,MAAM,GAAG,IAAA,gBAAM,GAAE,CAAC;AAExB,MAAM,CAAC,GAAG,CAAC,aAAa,EAAE,CAAC,GAAY,EAAE,GAAa,EAAE,EAAE,CAAC,oBAAoB,CAAC,MAAM,CAAC,GAAG,EAAE,GAAG,CAAC,CAAC,CAAC;AAElG,kBAAe,MAAM,CAAC"}

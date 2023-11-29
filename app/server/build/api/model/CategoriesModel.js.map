@@ -1,1 +1,1 @@
-{"version":3,"file":"CategoriesModel.js","sourceRoot":"","sources":["../../../src/api/model/CategoriesModel.ts"],"names":[],"mappings":""}
+{"version":3,"file":"CategoriesModel.js","sourceRoot":"","sources":["../../../src/api/model/CategoriesModel.ts"],"names":[],"mappings":";;;;;AAAA,iFAAyD;AAGzD,MAAqB,eAAe;IAApC;QACU,UAAK,GAAG,oBAAU,CAAC;IAO7B,CAAC;IALC,KAAK,CAAC,OAAO;QACX,MAAM,IAAI,GAAG,MAAM,IAAI,CAAC,KAAK,CAAC,OAAO,EAAE,CAAC;QACxC,OAAO,IAAI,CAAA;IACb,CAAC;CAEF;AARD,kCAQC"}

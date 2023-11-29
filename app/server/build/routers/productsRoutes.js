@@ -7,6 +7,6 @@ const express_1 = require("express");
 const ProductsController_1 = __importDefault(require("../api/controllers/ProductsController"));
 const productsController = new ProductsController_1.default();
 const router = (0, express_1.Router)();
-router.get('/product', (req, res) => productsController.getAll(req, res));
+router.get('/products', (req, res) => productsController.getAll(req, res));
 exports.default = router;
 //# sourceMappingURL=productsRoutes.js.map
