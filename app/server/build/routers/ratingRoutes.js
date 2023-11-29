@@ -4,10 +4,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = require("express");
-const productsRoutes_1 = __importDefault(require("./productsRoutes"));
-const ratingRoutes_1 = __importDefault(require("./ratingRoutes"));
+const RatingController_1 = __importDefault(require("../api/controllers/RatingController"));
+const ratingController = new RatingController_1.default();
 const router = (0, express_1.Router)();
-router.use('/', productsRoutes_1.default);
-router.use('/', ratingRoutes_1.default);
+router.get('/rating', (req, res) => ratingController.getAll(req, res));
 exports.default = router;
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=ratingRoutes.js.map
