@@ -9,4 +9,10 @@ export default class ProductsController {
     const serviceResponse = await this.productService.getAll();
     return res.status(mapStatusHTTP(serviceResponse.status)).json(serviceResponse.data);
   }
+  public async getProductsById(req: Request, res: Response) {
+    const { id } = req.params
+    const serviceResponse = await this.productService.getProductsById(Number(id))
+    return res.status(mapStatusHTTP(serviceResponse.status)).json(serviceResponse.data)
+  } 
+
 }

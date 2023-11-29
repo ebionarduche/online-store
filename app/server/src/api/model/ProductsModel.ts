@@ -1,7 +1,5 @@
 import Products from '../../database/model/Products';
-import Categories from '../../database/model/Categories';
-import IProductsModel from '../../interfaces/IProducts';
-import { IProducts } from '../../interfaces/IProducts';
+import IProductsModel, { IProducts } from '../../interfaces/IProducts';
 import { Sequelize } from 'sequelize';
 
 export default class ProductModel implements IProductsModel {
@@ -13,7 +11,7 @@ export default class ProductModel implements IProductsModel {
         'id',
         'name',
         'description',
-        'categoriesId', // Mantenha a chave estrangeira
+        'categoriesId',
         'stock',
         'brand',
         'salesFormat',
@@ -29,6 +27,12 @@ export default class ProductModel implements IProductsModel {
       ],
     });
 
+    return data;
+  }
+
+  async findById(id: number): Promise<IProducts | null> {
+    const data = await this.model.findByPk(id);
+    if (data == null) return null;
     return data;
   }
 }

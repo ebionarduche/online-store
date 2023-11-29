@@ -13,4 +13,5 @@ export interface IProducts {
 
 export default interface IProductsModel {
   findAll(): Promise<IProducts[]>;
+  findById(id:number): Promise<IProducts | null>
 }
