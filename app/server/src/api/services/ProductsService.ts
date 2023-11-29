@@ -1,7 +1,7 @@
-import { IProducts } from '../../database/interfaces/IProducts';
+import { IProducts } from '../../interfaces/IProducts';
 import ProductsModel from '../model/ProductsModel';
-import IProductsModel from '../interfaces/IProductsModel';
-import { ServiceResponse } from '../interfaces/ServiceResponse';
+import IProductsModel from '../../interfaces/IProducts';
+import { ServiceResponse } from '../../interfaces/ServiceResponse';
 
 export default class ProductsService {
   constructor(private productModel: IProductsModel = new ProductsModel()) {}

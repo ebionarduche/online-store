@@ -1,7 +1,7 @@
 import Products from '../../database/model/Products';
 import Categories from '../../database/model/Categories';
-import IProductsModel from '../interfaces/IProductsModel';
-import { IProducts } from '../../database/interfaces/IProducts';
+import IProductsModel from '../../interfaces/IProducts';
+import { IProducts } from '../../interfaces/IProducts';
 import { Sequelize } from 'sequelize';
 
 export default class ProductModel implements IProductsModel {

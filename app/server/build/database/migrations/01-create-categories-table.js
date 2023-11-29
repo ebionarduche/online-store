@@ -12,12 +12,12 @@ exports.default = {
             },
             category: {
                 type: sequelize_1.DataTypes.STRING,
-                allowNull: false
-            }
+                allowNull: false,
+            },
         });
     },
     down(queryInterface) {
         return queryInterface.dropTable('categories');
-    }
+    },
 };
 //# sourceMappingURL=01-create-categories-table.js.map
