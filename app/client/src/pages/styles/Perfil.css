@@ -1,0 +1,17 @@
+.perfil-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 2%;
+}
+
+.perfil-container > button {
+  border-style: none;
+  width: 20%;
+  margin: 1%;
+  background-color: orange;
+  padding: 1%;
+  cursor: pointer;
+}

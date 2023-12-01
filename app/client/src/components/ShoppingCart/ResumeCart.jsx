@@ -19,7 +19,7 @@ function ResumeCart({ price }) {
       <p>Frete R$ 0,00 </p>
       <p>{`em até 10x de R$ ${(total / divider).toFixed(2)} sem juros`}</p>
       <p>{`Valor a vista no Pix R$ ${(total * pix).toFixed(2)}`}</p>
-
+      <button>Finzalinar Compra</button>
     </div>
   );
 }

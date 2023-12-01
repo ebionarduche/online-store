@@ -19,6 +19,13 @@
   border: 1px solid rgba(135, 196, 180, 0.256);
   padding: 1.5%;
   border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s; /* Adicione transição para suavizar o efeito */
+}
+
+.card:hover {
+  transform: translateY(-3px) scale(1.02); /* Leve salto para cima e aumento de 5% no tamanho */
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1); /* Adicione sombra */
 }
 
 
@@ -75,6 +82,21 @@
 
 .iconSGV {
   width: 50px;
-  stroke: none;
-  fill: pink;
+  stroke: rgb(124, 124, 124);
+  fill: none;
+  transition: transform 0.3s, box-shadow 0.3s; /* Adicione transição para suavizar o efeito */
 } 
+
+.iconSGV:hover {
+  stroke: #ff5733;
+  fill: #ff5733;
+  transform: translateY(-2px) scale(1.08); /* Leve salto para cima e aumento de 5% no tamanho */
+}
+
+
+.card-icons {
+  display: flex;
+  justify-content: end;
+  /* background-color: red; */
+  width: 100%;
+}

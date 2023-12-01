@@ -18,9 +18,9 @@
 .carousel-container {
   display: flex;
   flex-wrap: nowrap;
-  padding: 2.5%;
+  padding: 5%;
   justify-content: center;
-  width: 80%;
+  width: 100%;
   overflow-x: auto;
   scroll-behavior: smooth;
 }
@@ -31,11 +31,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-  border-radius: 5%;
+  padding: 2px;
   margin: 5px;
   background-color: #fff;
   border: 3px solid rgba(135, 196, 180, 0.256);
+  transition: transform 0.3s, box-shadow 0.3s; /* Adicione transição para suavizar o efeito */
+  cursor: pointer;
+}
+
+.carousel-item:hover {
+  transform: translateY(-3px) scale(1.02); /* Leve salto para cima e aumento de 5% no tamanho */
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1); /* Adicione sombra */
 }
 
 .carousel-item > h1 {
@@ -88,5 +94,5 @@
 }
 
 .carousel > button > img {
-  width: 40%;
+  width: 50%;
 }

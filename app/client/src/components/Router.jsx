@@ -4,6 +4,7 @@ import ProductsDetails from '../pages/ProductsDetails';
 import Home from '../pages/Home';
 import ShoppingCart from '../pages/ShoppingCart';
 import Favorites from '../pages/Favorites';
+import Perfil from '../pages/Perfil';
 
 function Router() {
   return (
@@ -12,6 +13,8 @@ function Router() {
       <Route path="/products/:id" component={ ProductsDetails } />
       <Route path="/shopping-cart" component={ ShoppingCart } />
       <Route path="/favorites" component={ Favorites } />
+      <Route path="/perfil" component={ Perfil } />
+
     </Switch>
   );
 }

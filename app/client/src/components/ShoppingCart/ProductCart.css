@@ -1,0 +1,26 @@
+.product-cart-container {
+  width: 70%;
+  margin: 2.5% 2% 0 0;
+}
+
+.product-cart-card {
+  display: flex;
+  width: 100%;
+  border-radius: 25px;
+  background-color: rgb(194, 194, 194);
+  margin: 2% 0 2.5% 2.5%;
+  justify-content: space-between;
+  padding: 1%;
+} 
+
+.product-cart-card > img {
+  width: 120px;
+} 
+
+.product-cart-card > div > h1 {
+  font-size: 1.2rem;
+} 
+
+.shopping-cart-card > p {
+  font-size: 1.5rem;
+} 

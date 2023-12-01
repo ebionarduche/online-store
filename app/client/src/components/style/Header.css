@@ -4,7 +4,46 @@
   flex-wrap: nowrap;
   align-content: flex-start;
   justify-content: space-around;
-  align-items: baseline;
+  align-items: center;
   background-color: rgb(255, 255, 255);
   border: 1px solid rgba(135, 196, 180, 0.256);
 }
+
+.header-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-icon-container > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: transparent;
+}
+
+.header-cart-counter {
+  background-color: #ff5733;
+  border-radius: 100%;
+  color: white;
+  font-size: 0.7rem;
+  margin: 1px;
+  padding: 4px;
+  font-weight: 700;
+}
+
+.header-iconSGV {
+  margin: 0 0 0 15%;
+  width: 50px;
+  stroke: rgb(124, 124, 124);
+  fill: none;
+  cursor: pointer;
+} 
+
+.header-iconSGV:hover {
+  stroke: #ff5733;
+  fill: #ff5733;
+  transform: translateY(-2px) scale(1.08); 
+}
+

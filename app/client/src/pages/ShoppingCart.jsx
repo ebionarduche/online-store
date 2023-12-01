@@ -1,50 +1,60 @@
 import React, { useContext } from 'react';
 import { useHistory } from 'react-router-dom'; // Importe o useHistory
+import './styles/ShoppingCart.css';
+
 import cartIcon from '../data/icons/shopping-cart-icon.png';
 import Header from '../components/Header';
-import './styles/ShoppingCart.css';
 import Footer from '../components/Footer';
-import CartContext from '../context/CartContext';
 import ResumeCart from '../components/ShoppingCart/ResumeCart';
+import ProductCart from '../components/ShoppingCart/ProductCart';
+import Carousel from '../components/Carousel';
+import CartContext from '../context/CartContext';
 
 function ShoppingCart() {
   const { shoppingCart } = useContext(CartContext);
-  // const [toggle, setToggle] = useState(false)
-  const history = useHistory(); // Inicialize o useHistory
+  const history = useHistory();
 
   const handleContinueShopping = () => {
-    history.push('/'); // Use history.push para navegar de volta para a página inicial
+    history.push('/');
   };
 
   return (
     <div>
       <Header />
-      <div className="shopping-cart-container">
-        {
-          shoppingCart.map((product) => (
-            <div className="shopping-cart-card" key={ product.id }>
 
-              <img src={ product.image } alt="" />
-              <div>
-                <h1>{product.productName}</h1>
-                <h2>{product.brand}</h2>
+      {
+        shoppingCart.length === 0 ? (
+          <div>
+            <h1>Seu carrinho está vazio</h1>
+            <button type="button" onClick={ handleContinueShopping }>
+              <div className="cart-button-container">
+                <img src={ cartIcon } alt="" />
+                Continuar Comprando
               </div>
-              <s>Quantidade +-</s>
-              <s>Remover </s>
-              <p>{product.price}</p>
-            </div>
-          ))
-        }
-        <h1>Seu carrinho está vazio</h1>
-        <span>Deseja olhar outros produtos similares</span>
-        <ResumeCart price={ shoppingCart.map(({ price }) => price) } />
-        <button type="button" onClick={ handleContinueShopping }>
-          <div className="cart-button-container">
-            <img src={ cartIcon } alt="" />
-            Continuar Comprando
+            </button>
           </div>
-        </button>
-      </div>
+        ) : (
+          <div className="shopping-cart-container">
+            <section className="shopping-cart-final-buy">
+              <ProductCart shoppingCart={ shoppingCart } />
+              <ResumeCart price={ shoppingCart.map(({ price }) => price) } />
+            </section>
+
+            <section className="shopping-cart-continue-tu-buy">
+              <span>Deseja olhar outros produtos similares</span>
+              <Carousel />
+              <button type="button" onClick={ handleContinueShopping }>
+                <div className="cart-button-container">
+                  <img src={ cartIcon } alt="" />
+                  Continuar Comprando
+                </div>
+              </button>
+            </section>
+
+          </div>
+        )
+      }
+
       <Footer />
     </div>
   );

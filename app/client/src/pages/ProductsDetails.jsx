@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-max-depth */
 import './styles/ProductsDetails.css';
 
 import React, { useContext } from 'react';
@@ -45,17 +46,25 @@ function ProductsDetails() {
         </div>
 
         <div className="products-details-buy">
-          <span>{`R$ ${productToShow.price}`}</span>
           <p>{productToShow.description}</p>
+          <div className="product-details-buttons-container">
+            <span>{`R$ ${productToShow.price}`}</span>
 
-          <button type="button"> Comprar </button>
+            <button
+              className="product-details-buy-button"
+              type="button"
+            >
+              Comprar
+            </button>
 
-          <button
-            type="button"
-            onClick={ () => InsertProductCart(productToShow) }
-          >
-            <img src={ cartIcon } alt="" />
-          </button>
+            <button
+              className="product-details-cart-button"
+              type="button"
+              onClick={ () => InsertProductCart(productToShow) }
+            >
+              <img src={ cartIcon } alt="" width="50px" />
+            </button>
+          </div>
           <Carousel />
         </div>
 

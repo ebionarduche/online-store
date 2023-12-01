@@ -1,5 +1,5 @@
 import { useHistory } from 'react-router-dom';
-import { ReactComponent as CircleIcon } from 'feather-icons/dist/icons/circle.svg';
+import { ReactComponent as CartIcon } from 'feather-icons/dist/icons/shopping-cart.svg';
 import { ReactComponent as HeartIcon } from 'feather-icons/dist/icons/heart.svg';
 
 import products from '../data/products';
@@ -22,12 +22,10 @@ function Main() {
             className="card"
             onClick={ () => handleClick(product.id) }
           >
-            <div>
+            <div className="card-icons">
+              <CartIcon className="iconSGV" />
+              <HeartIcon className="iconSGV" />
 
-              <CircleIcon
-                className="iconSGV"
-              />
-              <HeartIcon width={ 100 } />
             </div>
             <div className="card-image">
               <img src={ product.primaryImage } alt="" />
