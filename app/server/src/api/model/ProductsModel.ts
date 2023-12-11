@@ -17,7 +17,7 @@ export default class ProductModel implements IProductsModel {
         'salesFormat',
         'colors',
         'price',
-        'quantity',
+        'image',
         [
           Sequelize.literal(
             '(SELECT category FROM categories WHERE categories.id = products.categories_id)',

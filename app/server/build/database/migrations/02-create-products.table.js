@@ -48,8 +48,8 @@ exports.default = {
                 type: sequelize_1.DataTypes.DECIMAL(10, 2),
                 allowNull: false,
             },
-            quantity: {
-                type: sequelize_1.DataTypes.INTEGER,
+            image: {
+                type: sequelize_1.DataTypes.STRING,
                 allowNull: false,
             },
         });
