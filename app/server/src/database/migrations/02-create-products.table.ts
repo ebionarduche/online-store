@@ -48,8 +48,8 @@ export default {
         type: DataTypes.DECIMAL(10, 2),
         allowNull: false,
       },
-      quantity: {
-        type: DataTypes.INTEGER,
+      image: {
+        type: DataTypes.STRING,
         allowNull: false,
       },
     });

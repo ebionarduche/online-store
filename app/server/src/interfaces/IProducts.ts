@@ -8,10 +8,10 @@ export interface IProducts {
   salesFormat: string;
   colors: string;
   price: number;
-  quantity: number;
+  image: string;
 }
 
 export default interface IProductsModel {
   findAll(): Promise<IProducts[]>;
-  findById(id:number): Promise<IProducts | null>
+  findById(id: number): Promise<IProducts | null>;
 }

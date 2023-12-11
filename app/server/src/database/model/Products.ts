@@ -12,7 +12,7 @@ class Products extends Model<InferAttributes<Products>, InferCreationAttributes<
   declare salesFormat: string;
   declare colors: string;
   declare price: number;
-  declare quantity: number;
+  declare image: string;
 }
 
 Products.init(
@@ -61,8 +61,8 @@ Products.init(
       type: DataTypes.DECIMAL(10, 2),
       allowNull: false,
     },
-    quantity: {
-      type: DataTypes.INTEGER,
+    image: {
+      type: DataTypes.STRING,
       allowNull: false,
     },
   },

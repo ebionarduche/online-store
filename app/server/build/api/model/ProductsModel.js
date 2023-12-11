@@ -30,6 +30,12 @@ class ProductModel {
         });
         return data;
     }
+    async findById(id) {
+        const data = await this.model.findByPk(id);
+        if (data == null)
+            return null;
+        return data;
+    }
 }
 exports.default = ProductModel;
 //# sourceMappingURL=ProductsModel.js.map
