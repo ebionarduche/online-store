@@ -5,6 +5,7 @@ import './style/Header.css';
 import { ReactComponent as CartIcon } from 'feather-icons/dist/icons/shopping-cart.svg';
 import { ReactComponent as UserIcon } from 'feather-icons/dist/icons/user.svg';
 import { ReactComponent as HeartIcon } from 'feather-icons/dist/icons/heart.svg';
+import { ReactComponent as SearchIcon } from 'feather-icons/dist/icons/search.svg';
 import logo from '../data/images/logo.png';
 import CartContext from '../context/CartContext';
 
@@ -21,7 +22,13 @@ function Header() {
         <img src={ logo } alt="icons kabuy" width="220px" />
       </Link>
 
-      <input type="text" placeholder="Search..." />
+      <form action="/search" method="get" className="header-form">
+        <input className="header-search-bar" type="text" placeholder="Pesquisar..." />
+        <button type="submit" className="header-search-button">
+          <SearchIcon />
+        </button>
+
+      </form>
 
       <div className="header-icon-container">
         <button onClick={ () => navigateHeader('/perfil') }>

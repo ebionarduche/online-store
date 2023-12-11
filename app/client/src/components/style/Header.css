@@ -47,3 +47,24 @@
   transform: translateY(-2px) scale(1.08); 
 }
 
+.header-form {
+  display: flex;
+  align-items: center;
+}
+
+.header-search-bar {
+  padding: 10px;
+  border: 1px solid #a1a1a1;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  width: 250px;
+}
+
+.header-search-button {
+  background-color: #ff5733;
+  color: white;
+  border: 1px solid #ff5733;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  height: 37px;
+}

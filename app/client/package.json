@@ -7,6 +7,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@trybe/eslint-config-frontend": "^1.11.4",
+    "axios": "^1.6.2",
     "express-async-errors": "^3.1.1",
     "feather-icons": "^4.29.1",
     "prop-types": "^15.8.1",

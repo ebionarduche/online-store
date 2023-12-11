@@ -3,8 +3,6 @@ import { useHistory } from 'react-router-dom'; // Importe o useHistory
 import './styles/ShoppingCart.css';
 
 import cartIcon from '../data/icons/shopping-cart-icon.png';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import ResumeCart from '../components/ShoppingCart/ResumeCart';
 import ProductCart from '../components/ShoppingCart/ProductCart';
 import Carousel from '../components/Carousel';
@@ -20,8 +18,6 @@ function ShoppingCart() {
 
   return (
     <div>
-      <Header />
-
       {
         shoppingCart.length === 0 ? (
           <div>
@@ -54,8 +50,6 @@ function ShoppingCart() {
           </div>
         )
       }
-
-      <Footer />
     </div>
   );
 }
