@@ -9,14 +9,8 @@ class ProductsService {
         this.productModel = productModel;
     }
     async getAll() {
-        const products = await this.productModel.findAll();
-        return { status: 'SUCCESS', data: products };
-    }
-    async getProductsById(id) {
-        const product = await this.productModel.findById(id);
-        if (!product)
-            return { status: 'NOT_FOUND', data: { message: 'Produto não encontrado' } };
-        return { status: 'SUCCESS', data: product };
+        const allProducts = await this.productModel.findAll();
+        return { status: 'SUCCESS', data: allProducts };
     }
 }
 exports.default = ProductsService;

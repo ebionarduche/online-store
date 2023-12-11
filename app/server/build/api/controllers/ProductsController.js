@@ -13,11 +13,6 @@ class ProductsController {
         const serviceResponse = await this.productService.getAll();
         return res.status((0, mapStatusHTTP_1.default)(serviceResponse.status)).json(serviceResponse.data);
     }
-    async getProductsById(req, res) {
-        const { id } = req.params;
-        const serviceResponse = await this.productService.getProductsById(Number(id));
-        return res.status((0, mapStatusHTTP_1.default)(serviceResponse.status)).json(serviceResponse.data);
-    }
 }
 exports.default = ProductsController;
 //# sourceMappingURL=ProductsController.js.map
