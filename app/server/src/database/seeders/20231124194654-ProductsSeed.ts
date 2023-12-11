@@ -14,7 +14,8 @@ export default {
           sales_format: 'Unidade',
           colors: 'black,gray,skyblue,pink',
           price: 1890.9,
-          image: 'oi',
+          image:
+            'https://raw.githubusercontent.com/ebionarduche/online-store/main/app/server/src/database/images/s10.png',
         },
         {
           name: 'Fritadeira Air Fryer 4l Mundial',
@@ -25,7 +26,8 @@ export default {
           sales_format: 'Unidade',
           colors: 'black,gray,snow',
           price: 356.3,
-          image: 'oi',
+          image:
+            'https://raw.githubusercontent.com/ebionarduche/online-store/main/app/server/src/database/images/fritadeira.png',
         },
         {
           name: 'Fonte 500w Fortrek Crusader',
@@ -37,7 +39,8 @@ export default {
           sales_format: 'Unidade Crusader',
           colors: 'black,gray',
           price: 150.4,
-          image: 'oi',
+          image:
+            'https://raw.githubusercontent.com/ebionarduche/online-store/main/app/server/src/database/images/fonte-atx-500w.png',
         },
         {
           name: 'Teclado bluetooth Logitech Master Series MX Keys',
@@ -48,7 +51,8 @@ export default {
           sales_format: 'Unidade',
           colors: 'black,gray',
           price: 656.6,
-          image: 'oi',
+          image:
+            'https://raw.githubusercontent.com/ebionarduche/online-store/main/app/server/src/database/images/tecladoLogitech.png',
         },
         {
           name: 'Caixa De Som Boombox 3 Bluetooth Preta Jbl',
@@ -59,7 +63,8 @@ export default {
           sales_format: 'Unidade',
           colors: 'black,green,red',
           price: 2179.5,
-          image: 'oi',
+          image:
+            'https://raw.githubusercontent.com/ebionarduche/online-store/main/app/server/src/database/images/Boombox3.png',
         },
         {
           name: 'Tênis Nike Court Legacy Canvas Mid Feminino',
@@ -71,7 +76,8 @@ export default {
           sales_format: 'Unidade',
           colors: 'black,snow',
           price: 499.9,
-          image: 'oi',
+          image:
+            'https://raw.githubusercontent.com/ebionarduche/online-store/main/app/server/src/database/images/TenisNikeCourt.png',
         },
         {
           name: 'Furadeira parafusadeira sem fio de 10mm Wap',
@@ -82,7 +88,8 @@ export default {
           sales_format: 'Unidade',
           colors: 'black,yellow',
           price: 169.9,
-          image: 'oi',
+          image:
+            'https://raw.githubusercontent.com/ebionarduche/online-store/main/app/server/src/database/images/FuradeiraWap.png',
         },
         {
           name: 'Bicicleta Aro 29 Krw Alumínio 24 Vel',
@@ -94,7 +101,8 @@ export default {
           sales_format: 'Unidade',
           colors: 'black,sktblue,lawngreen,orange,yellow',
           price: 873.5,
-          image: 'oi',
+          image:
+            'https://raw.githubusercontent.com/ebionarduche/online-store/main/app/server/src/database/images/BicicletaKrw.png',
         },
       ],
       {},
