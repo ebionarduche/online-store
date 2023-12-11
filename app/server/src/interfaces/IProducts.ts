@@ -8,6 +8,7 @@ export interface IProducts {
   salesFormat: string;
   colors: string;
   price: number;
+  image: string;
 }
 
 export default interface IProductsModel {
