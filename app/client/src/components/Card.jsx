@@ -1,11 +1,15 @@
+import React, { useContext } from 'react';
+
 import { useHistory } from 'react-router-dom';
 import { ReactComponent as CartIcon } from 'feather-icons/dist/icons/shopping-cart.svg';
 import { ReactComponent as HeartIcon } from 'feather-icons/dist/icons/heart.svg';
-
-import products from '../data/products';
+import ProductsContext from '../context/ProductsContext';
+// import products from '../data/products';
 import './style/Card.css';
 
 function Main() {
+  const { products } = useContext(ProductsContext);
+
   const history = useHistory();
 
   const handleClick = (productId) => {
