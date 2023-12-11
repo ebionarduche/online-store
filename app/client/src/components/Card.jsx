@@ -32,7 +32,7 @@ function Main() {
 
             </div>
             <div className="card-image">
-              <img src={ product.primaryImage } alt="" />
+              <img src={ product.image } alt="" />
             </div>
 
             <h1>{product.name}</h1>
